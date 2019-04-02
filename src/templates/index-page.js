@@ -16,7 +16,7 @@ export const IndexPageTemplate = ({
   intro
 }) => (
   <div>
-    <h1 className={`f1 light-blue`}>AlleyCorp</h1>
+    <h1 className={`f1 lightest-blue`}>AlleyCorp</h1>
   </div>
 );
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
 import logo from "../img/logo.svg";
 
 const Navbar = class extends React.Component {
@@ -34,61 +33,50 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+      <nav class="db dt-l w-100 border-box pa3 ph5-l">
+        <a
+          class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l"
+          href="#"
+          title="Home"
+        >
+          <img
+            src="http://tachyons.io/img/logo.jpg"
+            class="dib w2 h2 br-100"
+            alt="Site Name"
+          />
+        </a>
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+          <a
+            class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
+            href="#"
+            title="Home"
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
-          </div>
+            Home
+          </a>
+          <a
+            class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
+            href="#"
+            title="How it Works"
+          >
+            How it Works
+          </a>
+          <a
+            class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
+            href="#"
+            title="Blog"
+          >
+            Blog
+          </a>
+          <a
+            class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
+            href="#"
+            title="Press"
+          >
+            Press
+          </a>
+          <a class="link dim dark-gray f6 f5-l dib" href="#" title="Contact">
+            Contact
+          </a>
         </div>
       </nav>
     );
