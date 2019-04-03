@@ -1,31 +1,28 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
+import Profile from "../components/Profile";
 
-export const PeoplePageTemplate = props => {
+export const PeoplePageTemplate = ({ team }) => {
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                test
-              </h2>
-            </div>
+    <div className={`center`}>
+      <div className={`w-100 db mw7 pt4 center`}>
+        {team.map(teamMember => (
+          <div key={teamMember.name} className={`dib w-100 w-50-l`}>
+            <Profile {...teamMember} />
           </div>
-        </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
 const PeoplePage = ({ data }) => {
-  // const { markdownRemark: post } = data
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <PeoplePageTemplate />
+      <PeoplePageTemplate team={frontmatter.team} />
     </Layout>
   );
 };
@@ -33,11 +30,22 @@ const PeoplePage = ({ data }) => {
 export default PeoplePage;
 
 export const peoplePageQuery = graphql`
-  query PeoplePage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
+  query PeoplePageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "people-page" } }) {
       frontmatter {
-        title
+        team {
+          name
+          linkedin
+          description
+          title
+          pic {
+            childImageSharp {
+              fluid(maxWidth: 500, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
       }
     }
   }
