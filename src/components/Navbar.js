@@ -20,13 +20,13 @@ const Navbar = class extends React.Component {
         <div class="db dtc-l v-mid w-100 w-75-l tc tr-l pb0-l pb2">
           <a
             class="link pointer dim dark-gray f6 f5-l dib mr3 mr4-l"
-            onClick={() => [navigateTo("/contact")]}
+            onClick={() => [navigateTo("/people")]}
           >
             People
           </a>
           <a
             class="link pointer dim dark-gray f6 f5-l dib mr3 mr4-l"
-            onClick={() => [navigateTo("/contact")]}
+            onClick={() => [navigateTo("/companies")]}
           >
             Companies
           </a>
