@@ -45,4 +45,8 @@ vcs:
   - logo: /img/redpoint.jpg
     name: Redpoint
     url: "https://www.redpoint.com/"
+companies:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
 ---
