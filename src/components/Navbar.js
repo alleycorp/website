@@ -1,80 +1,37 @@
 import React from "react";
-import { Link } from "gatsby";
-import logo from "../img/logo.svg";
+import { navigateTo } from "gatsby";
 
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      active: false,
-      navBarActiveClass: ""
-    };
   }
-
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: "is-active"
-            })
-          : this.setState({
-              navBarActiveClass: ""
-            });
-      }
-    );
-  };
 
   render() {
     return (
       <nav class="db dt-l w-100 border-box pa3 ph5-l">
         <a
-          class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l"
-          href="#"
-          title="Home"
+          class="db dtc-l v-mid mid-gray link pointer dim w-100 w-25-l f2 tc tl-l mb2 mb0-l pb0-l pb2"
+          onClick={() => [navigateTo("/")]}
         >
-          <img
-            src="http://tachyons.io/img/logo.jpg"
-            class="dib w2 h2 br-100"
-            alt="Site Name"
-          />
+          AlleyCorp
         </a>
-        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l pb0-l pb2">
           <a
-            class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
-            href="#"
-            title="Home"
+            class="link pointer dim dark-gray f6 f5-l dib mr3 mr4-l"
+            onClick={() => [navigateTo("/contact")]}
           >
-            Home
+            People
           </a>
           <a
-            class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
-            href="#"
-            title="How it Works"
+            class="link pointer dim dark-gray f6 f5-l dib mr3 mr4-l"
+            onClick={() => [navigateTo("/contact")]}
           >
-            How it Works
+            Companies
           </a>
           <a
-            class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
-            href="#"
-            title="Blog"
+            class="link pointer dim dark-gray f6 f5-l dib"
+            onClick={() => [navigateTo("/contact")]}
           >
-            Blog
-          </a>
-          <a
-            class="link dim dark-gray f6 f5-l dib mr3 mr4-l"
-            href="#"
-            title="Press"
-          >
-            Press
-          </a>
-          <a class="link dim dark-gray f6 f5-l dib" href="#" title="Contact">
             Contact
           </a>
         </div>

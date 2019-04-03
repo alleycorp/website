@@ -6,7 +6,7 @@ import useSiteMetadata from "./SiteMetadata";
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <div>
+    <div className={`pa2 avenir`}>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
@@ -44,7 +44,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
+      <div className={``}>{children}</div>
     </div>
   );
 };
