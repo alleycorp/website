@@ -7,15 +7,7 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import { ChevronRight } from "react-feather";
 
-export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro
-}) => (
+export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
   <div className={`dt w-90 center`}>
     {/* Header */}
     <div className={`dt-row vh-50 w-100`}>
@@ -33,14 +25,8 @@ export const IndexPageTemplate = ({
         </div>
         <div className={`w-50-l w-100 fl pt4`}>
           <div className={`measure mt4-l mr4-l`}>
-            <div className={`f3 lh-copy dark-gray fw4 pb4`}>
-              Dedicated to building transformative companies in New York City.
-            </div>
-            <div className={`f3 lh-copy mid-gray fw1 pb4`}>
-              Founding and building companies in Silicon Alley. We also angel
-              and seed invest across sectors, usually as the one of the first
-              investors. Conversations often start pre-product and pre-deck.
-            </div>
+            <div className={`f3 lh-copy dark-gray fw4 pb4`}>{heading}</div>
+            <div className={`f3 lh-copy mid-gray fw1 pb4`}>{subheading}</div>
             <div className={`dt pb5`} onClick={() => [navigateTo("/contact")]}>
               <div className={`dtc`}>
                 <span
