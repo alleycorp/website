@@ -26,5 +26,23 @@ vcs:
   - logo: /img/a16z.png
     name: Andreessen Horowitz
     url: 'https://a16z.com/'
+  - logo: /img/general-catalyst.png
+    name: General Catalyst
+    url: 'https://www.generalcatalyst.com/'
+  - logo: /img/nea.jpg
+    name: NEA
+    url: 'https://www.nea.com/'
+  - logo: /img/maven.jpeg
+    name: Maven
+    url: 'https://www.mavenventures.com/'
+  - logo: /img/initialized.png
+    name: Initialized
+    url: 'https://initialized.com/'
+  - logo: /img/bbg.png
+    name: Built by Girls
+    url: 'https://www.bbgventures.com/'
+  - logo: /img/redpoint.jpg
+    name: Redpoint
+    url: 'https://www.redpoint.com/'
 ---
 
