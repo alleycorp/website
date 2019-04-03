@@ -1,7 +1,7 @@
 ---
 templateKey: people-page
 people:
-  - LinkedIn: alleycorp.com
+  - linkedin: alleycorp.com
     description: >-
       Kevin P. Ryan is one of the leading Internet entrepreneurs in New York,
       having founded and is Chairman of several businesses, including MongoDB,
@@ -17,7 +17,7 @@ people:
     pic: /img/kevin-ryan.png
     title: Partner
     founder: true
-  - LinkedIn: "https://www.linkedin.com/in/dmerr"
+  - linkedin: "https://www.linkedin.com/in/dmerr"
     description: >-
       Dwight Merriman is the co-founder of AlleyCorp and one of the original
       authors of MongoDB, the open-source document database. In 1995, he
@@ -30,7 +30,7 @@ people:
     pic: /img/dwight-merriman.png
     title: Advisor
     founder: true
-  - LinkedIn: "https://www.linkedin.com/in/wendytsu/"
+  - linkedin: "https://www.linkedin.com/in/wendytsu/"
     description: >-
       Wendy is responsible for diligencing new seed-investment opportunities and
       leading AlleyCorp's incubation methodology for new ventures. Prior to
@@ -45,7 +45,7 @@ people:
     pic: /img/wendy-tsu.png
     title: New Business Ventures Partner
     founder: false
-  - LinkedIn: "https://www.linkedin.com/in/alison-hill-316a7329"
+  - linkedin: "https://www.linkedin.com/in/alison-hill-316a7329"
     description: >-
       Alison Hill is a top-level Executive/Personal Assistant with more than
       twenty years experience supporting some of New York’s most prestigious
