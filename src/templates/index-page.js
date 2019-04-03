@@ -8,6 +8,7 @@ import { ChevronRight } from "react-feather";
 export const IndexPageTemplate = ({
   image,
   title,
+  kevin,
   heading,
   subheading,
   vcs
@@ -23,13 +24,11 @@ export const IndexPageTemplate = ({
               padding: "54.09% 0 0 0",
               // position: "relative",
               backgroundImage: `url(${
-                !!image.childImageSharp
-                  ? image.childImageSharp.fluid.src
-                  : image
+                !!kevin.childImageSharp
+                  ? kevin.childImageSharp.fluid.src
+                  : kevin
               })`,
               backgroundSize: "cover"
-              // backgroundPosition: `top left`
-              // backgroundAttachment: `fixed`
             }}
           />
         </div>
@@ -90,12 +89,11 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    {/* Steve Jobs */}
     <div className={`dt-row w-100`}>
       <div className={`w-100 pt6`}>
         <div className={`measure center`}>
           <div className={`f4 fw2 mid-gray lh-copy pb4`}>
-            Kevin Ryan, the ‘Godfather’ of NYC tech
+            Kevin Ryan - the 'Godfather' of NYC tech
           </div>
           <div className={`fr ttu accent lh-copy`}>- fortune</div>
         </div>
@@ -109,9 +107,9 @@ export const IndexPageTemplate = ({
           <div className={`pa1 pa4-l w-100 h-100-l`}>
             <section class="cf w-100 pa2-ns">
               {vcs.map(vc => (
-                <a href={vc.url}>
+                <a href={vc.url} className={`link gray`}>
                   <article class="fl w-100 w-50-m w-25-ns pa2-ns grow pointer ">
-                    <div class="aspect-ratio aspect-ratio--1x1 ba b--white">
+                    <div class="aspect-ratio aspect-ratio--1x1">
                       <img
                         style={{
                           backgroundImage: `url(${
@@ -120,10 +118,9 @@ export const IndexPageTemplate = ({
                               : vc.logo
                           })`
                         }}
-                        class="db bg-center cover aspect-ratio--object"
+                        class="db bg-center cover aspect-ratio--object br4"
                       />
                     </div>
-                    <h4 className={`tc`}>{vc.name}</h4>
                   </article>
                 </a>
               ))}
@@ -131,18 +128,17 @@ export const IndexPageTemplate = ({
           </div>
         </div>
         <div className={`dtc-l dt-row w-50 v-mid`}>
-          <div className={`f3 pv7-l measure-narrow center lh-copy pa4`}>
+          <div className={`f3 measure-narrow center lh-copy pa4`}>
             <div className={`f3 dark-gray fw4 pb4`}>Our friends</div>
             <div className={`f4 gray fw2`}>
               Growing a startup is all about choosing the right partners. We can
-              help you find those partners.
+              help you find those.
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    {/* Steven Johnson */}
     <div className={`dt-row w-100`}>
       <div className={`w-100 pt6`}>
         <div className={`measure-wide center`}>
@@ -192,20 +188,6 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </div>
-
-    {/* Subscribe */}
-    <div className={`dt-row w-100`}>Blank</div>
-
-    {/* Data ownwership */}
-    <div className={`dt-row w-100`}>
-      <div className={`measure-wide center mv6`}>
-        <div className={`ttu accent lh-copy pb4`}>PS.</div>
-        <div className={`f4 fw2 mid-gray lh-copy`}>
-          We know ownership of your data is important to you. Tangle will always
-          allow you to export your data, no questions asked.
-        </div>
-      </div>
-    </div>
   </div>
 );
 
@@ -224,6 +206,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
+        kevin={frontmatter.kevin}
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -255,6 +238,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        kevin
         heading
         subheading
         vcs {
