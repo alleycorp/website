@@ -92,12 +92,27 @@ export const IndexPageTemplate = ({
           </div>
         </div>
         <div className={`dt-row dtc-l v-mid w-100 w-50-l`}>
-          <div
-            className={`dt center h5 shadow-1 ba br4 b--light-gray bg-white`}
-            style={{
-              minWidth: "17.5em"
-            }}
-          />
+          <section class="cf w-100 pa2-ns">
+            {companies.map(company => (
+              <a href={company.url} className={`link gray`}>
+                <article class="fl w-100 w-50-m w-25-ns pa2-ns grow pointer ">
+                  <div class="aspect-ratio aspect-ratio--1x1">
+                    <img
+                      style={{
+                        backgroundImage: `url(${
+                          !!company.logo.childImageSharp
+                            ? company.logo.childImageSharp.fluid.src
+                            : company.logo
+                        })`,
+                        backgroundSize: "fill"
+                      }}
+                      class="db bg-center cover aspect-ratio--object br4"
+                    />
+                  </div>
+                </article>
+              </a>
+            ))}
+          </section>
         </div>
       </div>
     </div>
