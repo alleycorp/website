@@ -16,14 +16,20 @@ export const IndexPageTemplate = ({
     {/* Header */}
     <div className={`dt-row vh-50 w-100`}>
       <div className={`h-100 w-100`}>
-        <div
-          className={`w-50-l w-100 fr mt4-l br4 shadow-1`}
-          style={{ pointerEvents: "none" }}
-        >
+        <div className={`w-50-l w-100 fr mt4-l br4 shadow-1`}>
           <div
+            className={`br4`}
             style={{
               padding: "54.09% 0 0 0",
-              position: "relative"
+              // position: "relative",
+              backgroundImage: `url(${
+                !!image.childImageSharp
+                  ? image.childImageSharp.fluid.src
+                  : image
+              })`,
+              backgroundSize: "cover"
+              // backgroundPosition: `top left`
+              // backgroundAttachment: `fixed`
             }}
           />
         </div>
@@ -77,14 +83,7 @@ export const IndexPageTemplate = ({
           <div
             className={`dt center h5 shadow-1 ba br4 b--light-gray bg-white`}
             style={{
-              minWidth: "17.5em",
-              backgroundImage: `url(${
-                !!image.childImageSharp
-                  ? image.childImageSharp.fluid.src
-                  : image
-              })`
-              // backgroundPosition: `top left`,
-              // backgroundAttachment: `fixed`
+              minWidth: "17.5em"
             }}
           />
         </div>
@@ -111,8 +110,8 @@ export const IndexPageTemplate = ({
             <section class="cf w-100 pa2-ns">
               {vcs.map(vc => (
                 <a href={vc.url}>
-                  <article class="fl w-100 w-50-m w-25-ns pa2-ns grow pointer">
-                    <div class="aspect-ratio aspect-ratio--1x1">
+                  <article class="fl w-100 w-50-m w-25-ns pa2-ns grow pointer ">
+                    <div class="aspect-ratio aspect-ratio--1x1 ba b--white">
                       <img
                         style={{
                           backgroundImage: `url(${
