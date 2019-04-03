@@ -11,7 +11,8 @@ export const IndexPageTemplate = ({
   kevin,
   heading,
   subheading,
-  vcs
+  vcs,
+  companies
 }) => (
   <div className={`dt w-90 center`}>
     {/* Header */}
@@ -20,16 +21,16 @@ export const IndexPageTemplate = ({
         <div className={`w-50-l w-100 fr mt4-l br4 shadow-1`}>
           <div className={`br4`}>
             <section class="cf w-100 pa2-ns">
-              {vcs.map(vc => (
-                <a href={vc.url} className={`link gray`}>
+              {companies.map(company => (
+                <a href={company.url} className={`link gray`}>
                   <article class="fl w-100 w-50-m w-25-ns pa2-ns grow pointer ">
                     <div class="aspect-ratio aspect-ratio--1x1">
                       <img
                         style={{
                           backgroundImage: `url(${
-                            !!vc.logo.childImageSharp
-                              ? vc.logo.childImageSharp.fluid.src
-                              : vc.logo
+                            !!company.logo.childImageSharp
+                              ? company.logo.childImageSharp.fluid.src
+                              : company.logo
                           })`
                         }}
                         class="db bg-center cover aspect-ratio--object br4"
@@ -253,6 +254,17 @@ export const pageQuery = graphql`
         heading
         subheading
         vcs {
+          name
+          url
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        companies {
           name
           url
           logo {

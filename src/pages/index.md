@@ -5,8 +5,8 @@ image: /img/new-york.jpeg
 kevin: /img/kevin-ryan.jpeg
 heading: Dedicated to building transformative companies in New York City.
 subheading: >-
-  Founding and building companies in Silicon Alley. We also angel and seed
-  invest across sectors, usually as one of the first investors. Conversations
+  We found and build companies in Silicon Alley. We also angel and seed
+  invest across sectors. Conversations
   often start pre-product and pre-deck.
 vcs:
   - logo: /img/usv.png
