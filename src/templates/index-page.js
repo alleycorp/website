@@ -31,7 +31,8 @@ export const IndexPageTemplate = ({
                             !!company.logo.childImageSharp
                               ? company.logo.childImageSharp.fluid.src
                               : company.logo
-                          })`
+                          })`,
+                          backgroundSize: "fill"
                         }}
                         class="db bg-center cover aspect-ratio--object br4"
                       />
@@ -67,7 +68,7 @@ export const IndexPageTemplate = ({
     <div className={`dt-row w-100`}>
       <div className={`w-100 pt6-l pt4`}>
         <div className={`measure center`}>
-          <div className={`ttu light-blue lh-copy pb4`}>Led by Kevin Ryan</div>
+          <div className={`f3 light-blue lh-copy pb4`}>led by Kevin Ryan</div>
           <div className={`f4 fw2 dark-gray lh-copy pb4`}>
             The 'Godfather' of NYC tech
           </div>
@@ -251,7 +252,13 @@ export const pageQuery = graphql`
             }
           }
         }
-        kevin
+        kevin {
+          childImageSharp {
+            fluid(maxWidth: 250, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         heading
         subheading
         vcs {
