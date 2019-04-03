@@ -24,10 +24,20 @@ export const IndexPageTemplate = ({
           className={`w-50-l w-100 fr pa2 mt4-l br4 shadow-1`}
           style={{ pointerEvents: "none" }}
         >
-          <div style={{ padding: "54.09% 0 0 0", position: "relative" }}>
+          <div
+            style={{ padding: "54.09% 0 0 0", position: "relative" }}
+            style={{
+              backgroundImage: `url(${
+                !!image.childImageSharp
+                  ? image.childImageSharp.fluid.src
+                  : image
+              })`,
+              backgroundPosition: `top left`,
+              backgroundAttachment: `fixed`
+            }}
+          >
             test
           </div>
-          <script src="https://player.vimeo.com/api/player.js" />
         </div>
         <div className={`w-50-l w-100 fl pt4`}>
           <div className={`measure mt4-l mr4-l`}>
@@ -256,13 +266,13 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        # image {
-        #   childImageSharp {
-        #     fluid(maxWidth: 2048, quality: 100) {
-        #       ...GatsbyImageSharpFluid
-        #     }
-        #   }
-        # }
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         heading
         subheading
         mainpitch {
