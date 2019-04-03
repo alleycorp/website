@@ -31,13 +31,18 @@ const TemplateWrapper = ({ children }) => {
           sizes="16x16"
         />
 
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+
         <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#fff" />
         <link
           rel="stylesheet"
           href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
         />
 
-        <meta name="theme-color" content="#fff" />
+        <meta name="theme-color" content="#5bbad5" />
 
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />

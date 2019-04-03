@@ -13,7 +13,9 @@ const Navbar = class extends React.Component {
           class="db dtc-l v-mid mid-gray link pointer dim w-100 w-25-l f2 tc tl-l mb2 mb0-l pb2"
           onClick={() => [navigateTo("/")]}
         >
-          AlleyCorp
+          <div className={``}>
+            <img src={`/img/alleycorp-name.png`} style={{ maxHeight: "1em" }} />
+          </div>
         </a>
         <div class="db dtc-l v-mid w-100 w-75-l tc tr-l pb0-l pb2">
           <a

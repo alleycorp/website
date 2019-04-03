@@ -129,7 +129,7 @@ export const IndexPageTemplate = ({
         </div>
         <div className={`dtc-l dt-row w-50 v-mid`}>
           <div className={`f3 measure-narrow center lh-copy pa4`}>
-            <div className={`f3 dark-gray fw4 pb4`}>Our friends</div>
+            <div className={`f3 dark-gray fw4 pb4`}>Our co-investors</div>
             <div className={`f4 gray fw2`}>
               Growing a startup is all about choosing the right partners. We can
               help you find those.
