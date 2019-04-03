@@ -4,11 +4,9 @@ import { Linkedin } from "react-feather";
 
 const Profile = props => {
   return (
-    <div className={`mb6 measure-narrow center`}>
-      <a className={`link`} href={props.linkedin}>
-        <div
-          className={`relative dt w-100 ba br4 b--light-gray pa4 lh-copy grow pointer`}
-        >
+    <div className={`mb6 center`}>
+      <a className={`link`} href={props.LinkedIn}>
+        <div className={`dt ba br4 b--light-gray pa4 lh-copy grow pointer`}>
           <div className={`dt-row`}>
             <img
               src={
@@ -17,6 +15,8 @@ const Profile = props => {
                   : props.pic
               }
               alt={props.name}
+              width={300}
+              className={`br4 pa2`}
             />
           </div>
           <div className={`dt-row`}>
@@ -27,11 +27,11 @@ const Profile = props => {
               <div className={`dtc f4 fw4 f4 gray v-mid pr2`}>
                 {props.title}
               </div>
-              <div
-                className={`pl2 dtc f5 fw5 light-blue v-mid bl b--light-blue`}
-              >
-                <span className={``}>{`founder`}</span>
-              </div>
+              {props.founder == "true" && (
+                <div className={`pl2 dtc f5 fw5 accent v-mid bl b--accent`}>
+                  <span className={``}>{`founder`}</span>
+                </div>
+              )}
             </div>
           </div>
         </div>

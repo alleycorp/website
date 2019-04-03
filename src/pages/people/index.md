@@ -16,7 +16,8 @@ people:
     name: Kevin Ryan
     pic: /img/kevin-ryan.png
     title: Partner
-  - LinkedIn: 'https://www.linkedin.com/in/dmerr'
+    founder: true
+  - LinkedIn: "https://www.linkedin.com/in/dmerr"
     description: >-
       Dwight Merriman is the co-founder of AlleyCorp and one of the original
       authors of MongoDB, the open-source document database. In 1995, he
@@ -28,7 +29,8 @@ people:
     name: Dwight Merriman
     pic: /img/dwight-merriman.png
     title: Advisor
-  - LinkedIn: 'https://www.linkedin.com/in/wendytsu/'
+    founder: true
+  - LinkedIn: "https://www.linkedin.com/in/wendytsu/"
     description: >-
       Wendy is responsible for diligencing new seed-investment opportunities and
       leading AlleyCorp's incubation methodology for new ventures. Prior to
@@ -38,11 +40,12 @@ people:
       product manager at PayPal. She graduated with honors in Business
       Administration from the University of California, Berkeley.  She currently
       serves on the Smithsonian Bird Friendly Committee and is the Co-Chair of
-      GSB's NYC Alumni Ambassador Program. 
+      GSB's NYC Alumni Ambassador Program.
     name: Wendy Tsu
     pic: /img/wendy-tsu.png
-    title: Partner of New Business Ventures
-  - LinkedIn: 'https://www.linkedin.com/in/alison-hill-316a7329'
+    title: New Business Ventures Partner
+    founder: false
+  - LinkedIn: "https://www.linkedin.com/in/alison-hill-316a7329"
     description: >-
       Alison Hill is a top-level Executive/Personal Assistant with more than
       twenty years experience supporting some of New York’s most prestigious
@@ -56,5 +59,5 @@ people:
     name: Alison Hill
     pic: /img/alison-hill.png
     title: Chief of Stuff
+    founder: false
 ---
-

@@ -8,7 +8,7 @@ export const PeoplePageTemplate = ({ people }) => {
     <div className={`center`}>
       <div className={`w-100 db mw7 pt4 center`}>
         {people.map(person => (
-          <div key={person.name} className={`dib w-100 w-50-l`}>
+          <div key={person.name} className={`dib w-100 center`}>
             <Profile {...person} />
           </div>
         ))}
@@ -35,9 +35,10 @@ export const peoplePageQuery = graphql`
       frontmatter {
         people {
           name
-          linkedin
+          LinkedIn
           description
           title
+          founder
           pic {
             childImageSharp {
               fluid(maxWidth: 500, quality: 100) {
