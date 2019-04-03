@@ -14,7 +14,7 @@ people:
       1,500 employees.  In 2013, Kevin was named one of “The 100 Most
       Influential New Yorkers of the Past 25 Years” by the Observer.
     name: Kevin Ryan
-    pic: /img/kevin-ryan.jpg
+    pic: /img/kevin-ryan.png
     title: Partner
   - LinkedIn: 'https://www.linkedin.com/in/dmerr'
     description: >-
@@ -40,7 +40,7 @@ people:
       serves on the Smithsonian Bird Friendly Committee and is the Co-Chair of
       GSB's NYC Alumni Ambassador Program. 
     name: Wendy Tsu
-    pic: /img/wendy-tsu.jpg
+    pic: /img/wendy-tsu.png
     title: Partner of New Business Ventures
   - LinkedIn: 'https://www.linkedin.com/in/alison-hill-316a7329'
     description: >-
@@ -54,7 +54,7 @@ people:
       exploring other countries/cultures, and relentlessly trying to develop a
       passion for running.
     name: Alison Hill
-    pic: /img/alison-hill.jpg
+    pic: /img/alison-hill.png
     title: Chief of Stuff
 ---
 
