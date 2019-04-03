@@ -18,19 +18,28 @@ export const IndexPageTemplate = ({
     <div className={`dt-row vh-50 w-100`}>
       <div className={`h-100 w-100`}>
         <div className={`w-50-l w-100 fr mt4-l br4 shadow-1`}>
-          <div
-            className={`br4`}
-            style={{
-              padding: "54.09% 0 0 0",
-              // position: "relative",
-              backgroundImage: `url(${
-                !!kevin.childImageSharp
-                  ? kevin.childImageSharp.fluid.src
-                  : kevin
-              })`,
-              backgroundSize: "cover"
-            }}
-          />
+          <div className={`br4`}>
+            <section class="cf w-100 pa2-ns">
+              {vcs.map(vc => (
+                <a href={vc.url} className={`link gray`}>
+                  <article class="fl w-100 w-50-m w-25-ns pa2-ns grow pointer ">
+                    <div class="aspect-ratio aspect-ratio--1x1">
+                      <img
+                        style={{
+                          backgroundImage: `url(${
+                            !!vc.logo.childImageSharp
+                              ? vc.logo.childImageSharp.fluid.src
+                              : vc.logo
+                          })`
+                        }}
+                        class="db bg-center cover aspect-ratio--object br4"
+                      />
+                    </div>
+                  </article>
+                </a>
+              ))}
+            </section>
+          </div>
         </div>
         <div className={`w-50-l w-100 fl pt4`}>
           <div className={`measure mt4-l mr4-l`}>
@@ -39,7 +48,7 @@ export const IndexPageTemplate = ({
             <div className={`dt pb5`} onClick={() => [navigateTo("/contact")]}>
               <div className={`dtc`}>
                 <span
-                  className={`f4 lh-copy dark-gray b bb bw1 pointer b--accent`}
+                  className={`f4 lh-copy dark-gray b bb bw1 pointer b--light-blue`}
                 >
                   Get in touch
                 </span>
@@ -56,13 +65,12 @@ export const IndexPageTemplate = ({
     {/* What is it */}
     <div className={`dt-row w-100`}>
       <div className={`w-100 pt6-l pt4`}>
-        <div className={`measure-wide center`}>
-          <div className={`ttu accent lh-copy pb4`}>Who are we?</div>
-          <div className={`f4 fw2 mid-gray lh-copy`}>
-            Originator of MongoDB, Business Insider, Gilt Groupe, AlleyCorp
-            continues to launch new companies, each influencing their respective
-            fields and paving growth of entrepreneurship in New York City.
+        <div className={`measure center`}>
+          <div className={`ttu light-blue lh-copy pb4`}>Led by Kevin Ryan</div>
+          <div className={`f4 fw2 dark-gray lh-copy pb4`}>
+            The 'Godfather' of NYC tech
           </div>
+          <div className={`fl f6 gray ttu lh-copy`}>- fortune</div>
         </div>
       </div>
     </div>
@@ -72,9 +80,12 @@ export const IndexPageTemplate = ({
       <div className={`dt w-100 mt6-l pv4 mt5 ba br4 b--light-gray`}>
         <div className={`dt-row dtc-l v-mid w-100 w-50-l`}>
           <div className={`f3 measure-narrow lh-copy pa4 fr-l mv6-l`}>
-            <div className={`f3 dark-gray fw4 pb4`}>Led by Kevin Ryan</div>
+            <div className={`f3 dark-gray fw4 pb4`}>Our companies</div>
             <div className={`f4 mid-gray fw2`}>
-              Chairman and Founder, MongoDB, Zola, Workframe and Nomad Health
+              Originator of MongoDB, Business Insider, Gilt Groupe, AlleyCorp
+              continues to launch new companies, each influencing their
+              respective fields and paving growth of entrepreneurship in New
+              York City.
             </div>
           </div>
         </div>
@@ -95,7 +106,7 @@ export const IndexPageTemplate = ({
           <div className={`f4 fw2 mid-gray lh-copy pb4`}>
             Kevin Ryan - the 'Godfather' of NYC tech
           </div>
-          <div className={`fr ttu accent lh-copy`}>- fortune</div>
+          <div className={`fr ttu light-blue lh-copy`}>- fortune</div>
         </div>
       </div>
     </div>
@@ -147,7 +158,7 @@ export const IndexPageTemplate = ({
             discover connections that, even if obvious, seem to escape
             detection.
           </div>
-          <div className={`fr ttu accent lh-copy`}>- Paul Rand</div>
+          <div className={`fr ttu light-blue lh-copy`}>- Paul Rand</div>
         </div>
       </div>
     </div>
@@ -182,7 +193,7 @@ export const IndexPageTemplate = ({
     {/* Mission */}
     <div className={`dt-row w-100`}>
       <div className={`measure-wide center pv6`}>
-        <div className={`ttu accent lh-copy pb4`}>Why build Tangle?</div>
+        <div className={`ttu light-blue lh-copy pb4`}>Why build Tangle?</div>
         <div className={`f4 fw2 mid-gray lh-copy`}>
           To empower everyone to create big ideas.
         </div>
