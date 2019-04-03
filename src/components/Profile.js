@@ -24,11 +24,13 @@ const Profile = props => {
           </div>
           <div className={`dt-row`}>
             <div className={`dt pt2`}>
-              <div className={`dtc f4 fw4 f4 gray v-mid pr2`}>
+              <div className={`dtc f4 fw5 f5 gray v-mid pr2`}>
                 {props.title}
               </div>
-              {props.founder == "true" && (
-                <div className={`pl2 dtc f5 fw5 accent v-mid bl b--accent`}>
+              {props.founder && (
+                <div
+                  className={`pl2 dtc f6 fw6 light-blue v-mid bl b--light-blue`}
+                >
                   <span className={``}>{`founder`}</span>
                 </div>
               )}
