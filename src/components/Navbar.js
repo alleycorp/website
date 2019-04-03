@@ -10,7 +10,7 @@ const Navbar = class extends React.Component {
     return (
       <nav class="db dt-l w-100 border-box pa3 ph5-l">
         <a
-          class="db dtc-l v-mid mid-gray link pointer dim w-100 w-25-l f2 tc tl-l mb2 mb0-l pb0-l pb2"
+          class="db dtc-l v-mid mid-gray link pointer dim w-100 w-25-l f2 tc tl-l mb2 mb0-l pb2"
           onClick={() => [navigateTo("/")]}
         >
           AlleyCorp

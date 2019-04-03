@@ -21,23 +21,15 @@ export const IndexPageTemplate = ({
     <div className={`dt-row vh-50 w-100`}>
       <div className={`h-100 w-100`}>
         <div
-          className={`w-50-l w-100 fr pa2 mt4-l br4 shadow-1`}
+          className={`w-50-l w-100 fr mt4-l br4 shadow-1`}
           style={{ pointerEvents: "none" }}
         >
           <div
-            style={{ padding: "54.09% 0 0 0", position: "relative" }}
             style={{
-              backgroundImage: `url(${
-                !!image.childImageSharp
-                  ? image.childImageSharp.fluid.src
-                  : image
-              })`,
-              backgroundPosition: `top left`,
-              backgroundAttachment: `fixed`
+              padding: "54.09% 0 0 0",
+              position: "relative"
             }}
-          >
-            test
-          </div>
+          />
         </div>
         <div className={`w-50-l w-100 fl pt4`}>
           <div className={`measure mt4-l mr4-l`}>
@@ -95,24 +87,16 @@ export const IndexPageTemplate = ({
           <div
             className={`dt center h5 shadow-1 ba br4 b--light-gray bg-white`}
             style={{
-              minWidth: "17.5em"
+              minWidth: "17.5em",
+              backgroundImage: `url(${
+                !!image.childImageSharp
+                  ? image.childImageSharp.fluid.src
+                  : image
+              })`
+              // backgroundPosition: `top left`,
+              // backgroundAttachment: `fixed`
             }}
-          >
-            <div className={`h-100 w-100 pa4`}>
-              <div
-                className={`relative dt h-100 w-100 bb bw1 b--accent`}
-                style={{ pointerEvents: "none" }}
-              >
-                <div
-                  className={`absolute top-0 right-0 bb bw1 b--accent`}
-                  style={{ minWidth: "1.5rem" }}
-                />
-                <div className={`dtc pb2 f6 gray v-btm h-100 i`}>
-                  What's on your mind?
-                </div>
-              </div>
-            </div>
-          </div>
+          />
         </div>
       </div>
     </div>
@@ -139,15 +123,30 @@ export const IndexPageTemplate = ({
               pointerEvents: "none"
             }}
           >
-            Blank
+            <section class="cf w-100 pa2-ns">
+              <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+                <div class="aspect-ratio aspect-ratio--1x1">
+                  <img
+                    style={{
+                      backgroundImage: `url(http://mrmrs.github.io/images/0006.jpg)`
+                    }}
+                    class="db bg-center cover aspect-ratio--object"
+                  />
+                </div>
+                <a href="#0" class="ph2 ph0-ns pb3 link db">
+                  <h3 class="f5 f4-ns mb0 black-90">Title of piece</h3>
+                  <h3 class="f6 f5 fw4 mt2 black-60">Subtitle of piece</h3>
+                </a>
+              </article>
+            </section>
           </div>
         </div>
         <div className={`dtc-l dt-row w-50 v-mid`}>
           <div className={`f3 pv7-l measure-narrow center lh-copy pa4`}>
-            <div className={`f3 dark-gray fw4 pb4`}>Stop organizing.</div>
+            <div className={`f3 dark-gray fw4 pb4`}>Our friends</div>
             <div className={`f4 gray fw2`}>
-              Tangle fits your building blocks together for you like a puzzle.
-              No more wasting time with folder organization.
+              Growing a startup is all about choosing the right partners. We can
+              help you find those partners.
             </div>
           </div>
         </div>
