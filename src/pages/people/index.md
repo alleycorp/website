@@ -1,7 +1,7 @@
 ---
 templateKey: people-page
 people:
-  - LinkedIn: alleycorp.com
+  - linkedin: alleycorp.com
     description: >-
       Kevin P. Ryan is one of the leading Internet entrepreneurs in New York,
       having founded and is Chairman of several businesses, including MongoDB,
@@ -17,4 +17,3 @@ people:
     pic: /img/kevin-ryan.jpg
     title: Partner
 ---
-

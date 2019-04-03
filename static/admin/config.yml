@@ -70,7 +70,7 @@ collections:
               fields:
                 [
                   { label: Name, name: name, widget: string },
-                  { label: LinkedIn, name: LinkedIn, widget: string },
+                  { label: LinkedIn, name: linkedin, widget: string },
                   { label: Description, name: description, widget: string },
                   { label: Title, name: title, widget: string },
                   { label: Pic, name: pic, widget: image },

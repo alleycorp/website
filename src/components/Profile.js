@@ -17,8 +17,6 @@ const Profile = props => {
                   : props.pic
               }
               alt={props.name}
-              height={250}
-              width={250}
             />
           </div>
           <div className={`dt-row`}>
@@ -35,9 +33,6 @@ const Profile = props => {
                 <span className={``}>{`founder`}</span>
               </div>
             </div>
-          </div>
-          <div className={`dt-row`}>
-            <div className={`f5 fw3 gray pt3`}>{props.description}</div>
           </div>
         </div>
       </a>
