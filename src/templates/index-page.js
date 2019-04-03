@@ -1,13 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, navigateTo, graphql } from "gatsby";
+import { navigateTo, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
 import { ChevronRight } from "react-feather";
 
-export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
+export const IndexPageTemplate = ({
+  image,
+  title,
+  heading,
+  subheading,
+  vcs
+}) => (
   <div className={`dt w-90 center`}>
     {/* Header */}
     <div className={`dt-row vh-50 w-100`}>
@@ -103,27 +107,27 @@ export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
     <div className={`dt-row w-100`}>
       <div className={`dt h-100 w-100 mt6-l mt5 ba br4 b--light-gray`}>
         <div className={`dtc-l dt-row w-50 h-100`}>
-          <div
-            className={`pa1 pa4-l w-100 h-100-l h5`}
-            style={{
-              pointerEvents: "none"
-            }}
-          >
+          <div className={`pa1 pa4-l w-100 h-100-l`}>
             <section class="cf w-100 pa2-ns">
-              <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
-                <div class="aspect-ratio aspect-ratio--1x1">
-                  <img
-                    style={{
-                      backgroundImage: `url(http://mrmrs.github.io/images/0006.jpg)`
-                    }}
-                    class="db bg-center cover aspect-ratio--object"
-                  />
-                </div>
-                <a href="#0" class="ph2 ph0-ns pb3 link db">
-                  <h3 class="f5 f4-ns mb0 black-90">Title of piece</h3>
-                  <h3 class="f6 f5 fw4 mt2 black-60">Subtitle of piece</h3>
+              {vcs.map(vc => (
+                <a href={vc.url}>
+                  <article class="fl w-100 w-50-m w-25-ns pa2-ns grow pointer">
+                    <div class="aspect-ratio aspect-ratio--1x1">
+                      <img
+                        style={{
+                          backgroundImage: `url(${
+                            !!vc.logo.childImageSharp
+                              ? vc.logo.childImageSharp.fluid.src
+                              : vc.logo
+                          })`
+                        }}
+                        class="db bg-center cover aspect-ratio--object"
+                      />
+                    </div>
+                    <h4 className={`tc`}>{vc.name}</h4>
+                  </article>
                 </a>
-              </article>
+              ))}
             </section>
           </div>
         </div>
@@ -211,11 +215,7 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array
-  })
+  vcs: PropTypes.array
 };
 
 const IndexPage = ({ data }) => {
@@ -228,9 +228,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        vcs={frontmatter.vcs}
       />
     </Layout>
   );
@@ -260,6 +258,17 @@ export const pageQuery = graphql`
         }
         heading
         subheading
+        vcs {
+          name
+          url
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
       }
     }
   }
