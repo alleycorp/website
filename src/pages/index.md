@@ -48,8 +48,14 @@ companies:
   - logo: /img/zolo.jpg
     name: Zola
     url: 'https://www.zola.com/'
-  - logo: /img/nomad.png
+  - logo: /img/nomad.jpg
     name: Nomad
     url: 'https://nomadhealth.com/'
+  - logo: /img/workframe.png
+    name: Workframe
+    url: 'https://workframe.com/'
+  - logo: /img/coedition.png
+    name: Coedition
+    url: coedition.com
 ---
 
