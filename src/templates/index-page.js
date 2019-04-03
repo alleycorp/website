@@ -223,6 +223,7 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         vcs={frontmatter.vcs}
+        companies={frontmatter.companies}
       />
     </Layout>
   );
