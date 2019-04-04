@@ -8,30 +8,30 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav class="db dt-l w-100 border-box pa3 ph5-l">
+      <nav className="db dt-l w-100 b border-box pa3 b ph5-l ">
         <a
-          class="db dtc-l v-mid mid-gray link pointer dim w-100 w-25-l f2 tc tl-l mb2 mb0-l pb2"
+          className="db dtc-l v-mid mid-gray link pointer dim w-100 w-25-l f2 tc tl-l mb2 mb0-l pb2"
           onClick={() => [navigateTo("/")]}
         >
-          <div className={``}>
+          <div className={`h2`}>
             <img src={`/img/alleycorp-name.png`} style={{ maxHeight: "1em" }} />
           </div>
         </a>
-        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l pb0-l pb2">
+        <div className="db dtc-l v-mid w-100 w-75-l tc tr-l pb0-l pb2">
           <a
-            class="link pointer dim dark-gray f6 f5-l dib mr3 mr4-l"
+            className="link pointer dim dark-gray f4 f4-l dib mr3 mr4-l"
             onClick={() => [navigateTo("/people")]}
           >
             People
           </a>
-          <a
-            class="link pointer dim dark-gray f6 f5-l dib mr3 mr4-l"
+          {/* <a
+            className="link pointer dim dark-gray f6 f4-l dib mr3 mr4-l"
             onClick={() => [navigateTo("/companies")]}
           >
             Companies
-          </a>
+          </a> */}
           <a
-            class="link pointer dim dark-gray f6 f5-l dib"
+            className="link pointer dim dark-gray f4 f4-l dib mr3 mr4-l"
             onClick={() => [navigateTo("/contact")]}
           >
             Contact

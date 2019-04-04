@@ -110,10 +110,9 @@ export const IndexPageTemplate = ({
           <div className={`f3 measure-narrow center lh-copy pa4 mv6-l`}>
             <div className={`f3 dark-gray fw4 pb4`}>Our companies</div>
             <div className={`f4 mid-gray fw2`}>
-              Originator of MongoDB, Business Insider, Gilt Groupe, AlleyCorp
-              continues to launch new companies, each influencing their
-              respective fields and paving growth of entrepreneurship in New
-              York City.
+              Originator of MongoDB, Business Insider, Gilt Groupe, we continue
+              to launch new companies, each influencing their respective fields
+              and paving growth of entrepreneurship in New York City.
             </div>
           </div>
         </div>
@@ -145,10 +144,28 @@ export const IndexPageTemplate = ({
     <div className={`dt-row w-100`}>
       <div className={`w-100 pt6`}>
         <div className={`measure center`}>
+          <div className={`f3 dark-gray fw4 pb4`}>For students</div>
           <div className={`f4 fw2 mid-gray lh-copy pb4`}>
-            Kevin Ryan - the 'Godfather' of NYC tech
+            We are also invested in supporting student entrepreneurship sourced
+            by our AlleyCorp Fellows at universities.
           </div>
-          <div className={`fr ttu light-blue lh-copy`}>- fortune</div>
+          <div className={`fr light-blue lh-copy`}>
+            <a
+              className={`link dark-gray dt pb5`}
+              href={`https://docs.google.com/forms/u/2/d/e/1FAIpQLSfZXREslR9D_1JPwuziMpLrOezSroXuWEGYyiYPl6EMIxKiYA/viewform?usp=send_form`}
+            >
+              <div className={`dtc`}>
+                <span
+                  className={`f4 lh-copy dark-gray b bb bw1 pointer b--light-blue`}
+                >
+                  Apply here
+                </span>
+              </div>
+              <div className={`dtc v-mid`}>
+                <ChevronRight />
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -192,7 +209,7 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <div className={`dt-row w-100`}>
+    {/* <div className={`dt-row w-100`}>
       <div className={`w-100 pt6`}>
         <div className={`measure-wide center`}>
           <div className={`f4 fw2 mid-gray lh-copy pb4`}>
@@ -203,10 +220,10 @@ export const IndexPageTemplate = ({
           <div className={`fr ttu light-blue lh-copy`}>- Paul Rand</div>
         </div>
       </div>
-    </div>
+    </div> */}
 
     {/* Feature 3 */}
-    <div className={`dt-row w-100`}>
+    {/* <div className={`dt-row w-100`}>
       <div className={`dt w-100 mt6-l mt5 br4 b--light-gray ba`}>
         <div className={`dt-row w-100`}>
           <div className={`f3 measure-narrow center lh-copy pa4`}>
@@ -230,17 +247,17 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
 
     {/* Mission */}
-    <div className={`dt-row w-100`}>
+    {/* <div className={`dt-row w-100`}>
       <div className={`measure-wide center pv6`}>
         <div className={`ttu light-blue lh-copy pb4`}>Why build Tangle?</div>
         <div className={`f4 fw2 mid-gray lh-copy`}>
           To empower everyone to create big ideas.
         </div>
       </div>
-    </div>
+    </div> */}
   </div>
 );
 

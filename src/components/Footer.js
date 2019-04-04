@@ -2,7 +2,7 @@ import * as React from "react";
 
 const Footer = props => {
   return (
-    <div className={`w-100 bt b--light-gray pv5`}>
+    <div className={`w-100 bt b--light-gray pv5 mt6`}>
       <div className={`measure-wide center f5 gray`}>
         <div className={`dt`}>
           <div className={`dt-row h2`}>
