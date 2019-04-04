@@ -60,16 +60,16 @@ companies:
 exits:
   - logo: /img/mongo.png
     name: MongoDB
-    url: mongodb.com
+    url: www.mongodb.com
   - logo: /img/doubleclick.png
     name: DoubleClick
-    url: google.com
+    url: www.google.com
   - logo: /img/business-insider.png
     name: Business Insider
-    url: businessinsider.com
+    url: www.businessinsider.com
   - logo: /img/gilt.jpg
     name: Gilt Groupe
-    url: gilt.com
+    url: www.gilt.com
 investments:
   - logo: /img/anvyl.jpg
     name: Anvyl
