@@ -56,7 +56,7 @@ companies:
     url: 'https://workframe.com/'
   - logo: /img/coedition.png
     name: Coedition
-    url: coedition.com
+    url: www.coedition.com
 exits:
   - logo: /img/mongo.png
     name: MongoDB
