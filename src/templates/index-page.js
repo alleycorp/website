@@ -12,7 +12,9 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   vcs,
-  companies
+  companies,
+  exits,
+  investments
 }) => (
   <div className={`dt w-90 center`}>
     {/* Header */}
@@ -21,16 +23,35 @@ export const IndexPageTemplate = ({
         <div className={`w-50-l w-100 fr mt4-l br4 shadow-1`}>
           <div className={`br4`}>
             <section class="cf w-100 pa2">
-              {companies.map(company => (
-                <a href={company.url} className={`link gray`}>
+              {exits.map(exit => (
+                <a href={exit.url} className={`link gray`}>
                   <article class="fl w-25 pa2 grow pointer ">
                     <div class="aspect-ratio aspect-ratio--1x1">
                       <img
                         style={{
                           backgroundImage: `url(${
-                            !!company.logo.childImageSharp
-                              ? company.logo.childImageSharp.fluid.src
-                              : company.logo
+                            !!exit.logo.childImageSharp
+                              ? exit.logo.childImageSharp.fluid.src
+                              : exit.logo
+                          })`,
+                          backgroundSize: "fill"
+                        }}
+                        class="db bg-center cover aspect-ratio--object br4"
+                      />
+                    </div>
+                  </article>
+                </a>
+              ))}
+              {investments.map(investment => (
+                <a href={investment.url} className={`link gray`}>
+                  <article class="fl w-25 pa2 grow pointer ">
+                    <div class="aspect-ratio aspect-ratio--1x1">
+                      <img
+                        style={{
+                          backgroundImage: `url(${
+                            !!investment.logo.childImageSharp
+                              ? investment.logo.childImageSharp.fluid.src
+                              : investment.logo
                           })`,
                           backgroundSize: "fill"
                         }}
@@ -244,6 +265,8 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         vcs={frontmatter.vcs}
         companies={frontmatter.companies}
+        exits={frontmatter.exits}
+        investments={frontmatter.investments}
       />
     </Layout>
   );
@@ -292,6 +315,28 @@ export const pageQuery = graphql`
           }
         }
         companies {
+          name
+          url
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        exits {
+          name
+          url
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        investments {
           name
           url
           logo {
