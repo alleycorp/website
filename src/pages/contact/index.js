@@ -40,6 +40,10 @@ export default class Index extends React.Component {
           <div className="">
             <div className="center measure-wide pv5">
               <h1 className={`f-subheadline pv3`}>Get in touch with us</h1>
+              <p className={`f3 pb3 gray lh-copy`}>
+                We actually read these and will get back to you in 24 hours
+                (weekdays). Thats our SLA.
+              </p>
               <form
                 name="contact"
                 method="post"

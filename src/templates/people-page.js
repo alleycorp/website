@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Profile from "../components/Profile";
 import { ChevronRight } from "react-feather";
-import { persistenceAdapters } from "lokijs";
 
 export const PeoplePageTemplate = ({ people }) => {
   return (
