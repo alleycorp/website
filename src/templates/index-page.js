@@ -20,10 +20,10 @@ export const IndexPageTemplate = ({
       <div className={`h-100 w-100`}>
         <div className={`w-50-l w-100 fr mt4-l br4 shadow-1`}>
           <div className={`br4`}>
-            <section class="cf w-100 pa2-ns">
+            <section class="cf w-100 pa2">
               {companies.map(company => (
                 <a href={company.url} className={`link gray`}>
-                  <article class="fl w-100 w-50-m w-25-ns pa2-ns grow pointer ">
+                  <article class="fl w-25 pa2 grow pointer ">
                     <div class="aspect-ratio aspect-ratio--1x1">
                       <img
                         style={{
@@ -68,7 +68,12 @@ export const IndexPageTemplate = ({
     <div className={`dt-row w-100`}>
       <div className={`w-100 pt6-l pt4`}>
         <div className={`measure center`}>
-          <div className={`f3 light-blue lh-copy pb4`}>led by Kevin Ryan</div>
+          <div className={`f3 light-blue lh-copy pb4`}>
+            led by{" "}
+            <span className={`dark-gray b bb bw1 pointer b--light-blue`}>
+              Kevin Ryan
+            </span>
+          </div>
           <div className={`f4 fw2 dark-gray lh-copy pb4`}>
             The 'Godfather' of NYC tech
           </div>
@@ -81,7 +86,7 @@ export const IndexPageTemplate = ({
     <div className={`dt-row w-100`}>
       <div className={`dt w-100 mt6-l pv4 mt5 ba br4 b--light-gray`}>
         <div className={`dt-row dtc-l v-mid w-100 w-50-l`}>
-          <div className={`f3 measure-narrow lh-copy pa4 fr-l mv6-l`}>
+          <div className={`f3 measure-narrow center lh-copy pa4 mv6-l`}>
             <div className={`f3 dark-gray fw4 pb4`}>Our companies</div>
             <div className={`f4 mid-gray fw2`}>
               Originator of MongoDB, Business Insider, Gilt Groupe, AlleyCorp
@@ -92,10 +97,10 @@ export const IndexPageTemplate = ({
           </div>
         </div>
         <div className={`dt-row dtc-l v-mid w-100 w-50-l`}>
-          <section class="cf w-100 pa2-ns">
+          <section class="cf w-100 pa2">
             {companies.map(company => (
               <a href={company.url} className={`link gray`}>
-                <article class="fl w-100 w-50-m w-25-ns pa2-ns grow pointer ">
+                <article class="fl w-25 pa2 grow pointer ">
                   <div class="aspect-ratio aspect-ratio--1x1">
                     <img
                       style={{
@@ -103,8 +108,7 @@ export const IndexPageTemplate = ({
                           !!company.logo.childImageSharp
                             ? company.logo.childImageSharp.fluid.src
                             : company.logo
-                        })`,
-                        backgroundSize: "fill"
+                        })`
                       }}
                       class="db bg-center cover aspect-ratio--object br4"
                     />
@@ -133,10 +137,10 @@ export const IndexPageTemplate = ({
       <div className={`dt h-100 w-100 mt6-l mt5 ba br4 b--light-gray`}>
         <div className={`dtc-l dt-row w-50 h-100`}>
           <div className={`pa1 pa4-l w-100 h-100-l`}>
-            <section class="cf w-100 pa2-ns">
+            <section class="cf w-100 pa2">
               {vcs.map(vc => (
                 <a href={vc.url} className={`link gray`}>
-                  <article class="fl w-100 w-50-m w-25-ns pa2-ns grow pointer ">
+                  <article class="fl w-25 pa2 grow pointer ">
                     <div class="aspect-ratio aspect-ratio--1x1">
                       <img
                         style={{
