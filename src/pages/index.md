@@ -47,26 +47,26 @@ vcs:
 companies:
   - logo: /img/zolo.jpg
     name: Zola
-    header: test
-    tagline: test
-    description: test
+    header: Reinvented Wedding Planning Technology
+    tagline: Forbes' 2017 next billion-dollar startups.
+    description: In 2013, Kevin Ryan co-founded Zola with two former Gilt executives and is Chairman of the Board. Zola is transforming how couples and guests share, buy, and ship wedding gifts and has served over 300,000 couples.
     url: "https://www.zola.com/"
   - logo: /img/nomad.jpg
     name: Nomad
-    header: test
-    tagline: test
-    description: test
+    header: Marketplace for Clinical Work
+    tagline: Fortune's 2017 leading digital health companies.
+    description: In 2015, Kevin Ryan co-founded Nomad Health and is Chairman of the Board. Nomad is the first online marketplace for clinical work eliminating the chaotic healthcare staffing system for doctors and nurses.
     url: "https://nomadhealth.com/"
   - logo: /img/workframe.png
     name: Workframe
-    header: test
-    tagline: test
-    description: test
+    header: Real Estate Collaboration Platform
+    tagline: Forbes' 2018 real estate startups to watch.
+    description: In 2015, Kevin Ryan co-founded Workframe and is Chairman of the Board. Workframe is a collaboration platform for real estate teams that drives communication and decision-making across projects of any scope.
     url: "https://workframe.com/"
   - logo: /img/coedition.png
     name: Coedition
-    header: test
-    tagline: test
-    description: test
+    header: Women's Plus-size Ecommerce
+    tagline: Launched March 2018.
+    description: Kevin Ryan co-founded CoEdition with three former Gilt executives. CoEdition offers women's sizes 10 to 26 and aims to be a tool for women to buy stylish options without questioning whether it will be available in their size.
     url: coedition.com
 ---
