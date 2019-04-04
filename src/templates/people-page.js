@@ -2,16 +2,55 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Profile from "../components/Profile";
+import { ChevronRight } from "react-feather";
+import { persistenceAdapters } from "lokijs";
 
 export const PeoplePageTemplate = ({ people }) => {
   return (
-    <div className={`center`}>
-      <div className={`w-100 db mw7 pt4 center`}>
-        {people.map(person => (
-          <div key={person.name} className={`dib w-100 center`}>
-            <Profile {...person} />
+    <div className={`dt center pt5`}>
+      <div className={`dt-row cf`}>
+        {people.map((person, index) => {
+          if (person.name === "Kevin Ryan") {
+            return (
+              <div key={person.name} className={`w-100 pa3`}>
+                <Profile {...person} />
+              </div>
+            );
+          }
+          return (
+            <div key={person.name} className={`fl w-100 w-third-l pa3`}>
+              <Profile {...person} />
+            </div>
+          );
+        })}
+      </div>
+      <div className={`dt-row w-100`}>
+        <div className={`w-100 pt5`}>
+          <div className={`measure center`}>
+            <div className={`f3 dark-gray fw4 pb4`}>For students</div>
+            <div className={`f4 fw2 mid-gray lh-copy pb4`}>
+              We are also invested in supporting student entrepreneurship
+              sourced by our AlleyCorp Fellows at universities.
+            </div>
+            <div className={`fr light-blue lh-copy`}>
+              <a
+                className={`link dark-gray dt pb5`}
+                href={`https://docs.google.com/forms/u/2/d/e/1FAIpQLSfZXREslR9D_1JPwuziMpLrOezSroXuWEGYyiYPl6EMIxKiYA/viewform?usp=send_form`}
+              >
+                <div className={`dtc`}>
+                  <span
+                    className={`f4 lh-copy dark-gray b bb bw1 pointer b--light-blue`}
+                  >
+                    Apply here
+                  </span>
+                </div>
+                <div className={`dtc v-mid`}>
+                  <ChevronRight />
+                </div>
+              </a>
+            </div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );

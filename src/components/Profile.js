@@ -4,7 +4,7 @@ import { Linkedin } from "react-feather";
 
 const Profile = props => {
   return (
-    <div className={`mb6 center`}>
+    <div className={`mv2`}>
       <a className={`link`} href={props.linkedin}>
         <div className={`dt ba br4 b--light-gray pa4 lh-copy grow pointer`}>
           <div className={`dt-row`}>
