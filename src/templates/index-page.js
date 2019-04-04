@@ -18,54 +18,10 @@ export const IndexPageTemplate = ({
 }) => (
   <div className={`dt w-90 center`}>
     {/* Header */}
-    <div className={`dt-row vh-50 w-100`}>
-      <div className={`h-100 w-100`}>
-        <div className={`w-50-l w-100 fr mt4-l br4 shadow-1`}>
-          <div className={`br4`}>
-            <section class="cf w-100 pa2">
-              {exits.map(exit => (
-                <a href={exit.url} className={`link gray`}>
-                  <article class="fl w-25 pa2 grow pointer ">
-                    <div class="aspect-ratio aspect-ratio--1x1">
-                      <img
-                        style={{
-                          backgroundImage: `url(${
-                            !!exit.logo.childImageSharp
-                              ? exit.logo.childImageSharp.fluid.src
-                              : exit.logo
-                          })`,
-                          backgroundSize: "fill"
-                        }}
-                        class="db bg-center cover aspect-ratio--object br4"
-                      />
-                    </div>
-                  </article>
-                </a>
-              ))}
-              {investments.map(investment => (
-                <a href={investment.url} className={`link gray`}>
-                  <article class="fl w-25 pa2 grow pointer ">
-                    <div class="aspect-ratio aspect-ratio--1x1">
-                      <img
-                        style={{
-                          backgroundImage: `url(${
-                            !!investment.logo.childImageSharp
-                              ? investment.logo.childImageSharp.fluid.src
-                              : investment.logo
-                          })`,
-                          backgroundSize: "fill"
-                        }}
-                        class="db bg-center cover aspect-ratio--object br4"
-                      />
-                    </div>
-                  </article>
-                </a>
-              ))}
-            </section>
-          </div>
-        </div>
-        <div className={`w-50-l w-100 fl pt4`}>
-          <div className={`measure mt4-l mr4-l`}>
+    <div className={`dt-row w-100`}>
+      <div className={`dt w-100 pb4`}>
+        <div className={`dt-row dtc-l v-mid w-100 w-50-l`}>
+          <div className={`f3 measure-narrow center lh-copy pa4 mv6-l`}>
             <div className={`f3 lh-copy dark-gray fw4 pb4`}>{heading}</div>
             <div className={`f3 lh-copy mid-gray fw1 pb4`}>{subheading}</div>
             <div className={`dt pb5`} onClick={() => [navigateTo("/contact")]}>
@@ -82,12 +38,54 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
+        <div className={`dt-row dtc-l v-mid w-100 w-50-l`}>
+          <section class="cf w-100 pa2">
+            {exits.map(exit => (
+              <a href={exit.url} className={`link gray`}>
+                <article class="fl w-25 pa2 grow pointer ">
+                  <div class="aspect-ratio aspect-ratio--1x1">
+                    <img
+                      style={{
+                        backgroundImage: `url(${
+                          !!exit.logo.childImageSharp
+                            ? exit.logo.childImageSharp.fluid.src
+                            : exit.logo
+                        })`,
+                        backgroundSize: "fill"
+                      }}
+                      class="db bg-center cover aspect-ratio--object br4"
+                    />
+                  </div>
+                </article>
+              </a>
+            ))}
+            {investments.map(investment => (
+              <a href={investment.url} className={`link gray`}>
+                <article class="fl w-25 pa2 grow pointer ">
+                  <div class="aspect-ratio aspect-ratio--1x1">
+                    <img
+                      style={{
+                        backgroundImage: `url(${
+                          !!investment.logo.childImageSharp
+                            ? investment.logo.childImageSharp.fluid.src
+                            : investment.logo
+                        })`,
+                        backgroundSize: "fill"
+                      }}
+                      class="db bg-center cover aspect-ratio--object br4"
+                    />
+                  </div>
+                </article>
+              </a>
+            ))}
+          </section>
+        </div>
       </div>
     </div>
 
-    {/* What is it */}
+    {/* Kevin */}
     <div className={`dt-row w-100`}>
-      <div className={`w-100 pt6-l pt4`}>
+      <div className={`w-100 pt4`}>
         <div className={`measure center`}>
           <div className={`f3 light-blue lh-copy pb4`}>
             led by{" "}
