@@ -39,7 +39,7 @@ export const PeoplePageTemplate = ({ people }) => {
               >
                 <div className={`dtc`}>
                   <span
-                    className={`f4 lh-copy dark-gray b bb bw1 pointer b--light-blue`}
+                    className={`f4 lh-copy  hover-light-blue dark-gray b bb bw1 pointer b--light-blue`}
                   >
                     Apply here
                   </span>

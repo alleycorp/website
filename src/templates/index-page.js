@@ -27,7 +27,7 @@ export const IndexPageTemplate = ({
             <div className={`dt pb5`} onClick={() => [navigateTo("/contact")]}>
               <div className={`dtc`}>
                 <span
-                  className={`f4 lh-copy dark-gray b bb bw1 pointer b--light-blue`}
+                  className={`f4 lh-copy hover-light-blue dark-gray b bb bw1 pointer b--light-blue`}
                 >
                   Get in touch
                 </span>
@@ -89,7 +89,9 @@ export const IndexPageTemplate = ({
         <div className={`measure center`}>
           <div className={`f3 light-blue lh-copy pb4`}>
             led by{" "}
-            <span className={`dark-gray b bb bw1 pointer b--light-blue`}>
+            <span
+              className={`dark-gray hover-light-blue b bb bw1 pointer b--light-blue`}
+            >
               Kevin Ryan
             </span>
           </div>
@@ -154,7 +156,7 @@ export const IndexPageTemplate = ({
             >
               <div className={`dtc`}>
                 <span
-                  className={`f4 lh-copy dark-gray b bb bw1 pointer b--light-blue`}
+                  className={`f4 lh-copy dark-gray hover-light-blue b bb bw1 pointer b--light-blue`}
                 >
                   Apply here
                 </span>

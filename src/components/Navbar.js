@@ -19,7 +19,7 @@ const Navbar = class extends React.Component {
         </a>
         <div className="db dtc-l v-mid w-100 w-75-l tc tr-l pb0-l pb2">
           <a
-            className="link pointer dim dark-gray f4 f4-l dib mr3 mr4-l"
+            className="link pointer hover-light-blue dark-gray f4 f4-l dib mr3 mr4-l"
             onClick={() => [navigateTo("/people")]}
           >
             People
@@ -31,7 +31,7 @@ const Navbar = class extends React.Component {
             Companies
           </a> */}
           <a
-            className="link pointer dim dark-gray f4 f4-l dib mr3 mr4-l"
+            className="link pointer hover-light-blue dark-gray f4 f4-l dib mr3 mr4-l"
             onClick={() => [navigateTo("/contact")]}
           >
             Contact
