@@ -5,9 +5,12 @@ name: Kevin Ryan
 pic: /img/kevin-ryan.png
 title: Partner
 founder: true
-recognitions: 
-boards: 
+recognitions:
+recognitionsSubHeading: blank
+boards:
+boardsSubHeading: blank
 media:
+mediaSubHeading: blank
 ---
 
 # Chairman and Founder, MongoDB, Zola, Workframe and Nomad Health

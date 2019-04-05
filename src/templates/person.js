@@ -95,10 +95,46 @@ export const pageQuery = graphql`
         title
         founder
         linkedin
+        boardsSubheading
+        recognitionsSubheading
+        mediaSubheading
         pic {
           childImageSharp {
             fluid(maxWidth: 500, quality: 100) {
               ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        boards {
+          name
+          url
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        recognitions {
+          name
+          url
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        media {
+          name
+          url
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }

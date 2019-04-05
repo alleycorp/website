@@ -5,9 +5,12 @@ name: Dwight Merriman
 pic: /img/dwight-merriman.png
 title: Advisor
 founder: true
-recognitions: 
-boards: 
+recognitions:
+recognitionsSubHeading: blank
+boards:
+boardsSubHeading: blank
 media:
+mediaSubHeading: blank
 ---
 
 Dwight Merriman is the co-founder of AlleyCorp and one of the original

@@ -5,9 +5,12 @@ name: Wendy Tsu
 pic: /img/wendy-tsu.png
 title: New Business Ventures Partner
 founder: false
-recognitions: 
-boards: 
+recognitions:
+recognitionsSubHeading: blank
+boards:
+boardsSubHeading: blank
 media:
+mediaSubHeading: blank
 ---
 
 Wendy is responsible for diligencing new seed-investment opportunities and

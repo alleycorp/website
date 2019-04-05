@@ -18,12 +18,12 @@ collections:
           widget: "hidden",
           default: "person",
         }
-      - { label: Name, name: name, widget: string },
-      - { label: LinkedIn, name: linkedin, widget: string },
-      - { label: Description, name: description, widget: markdown },
-      - { label: Title, name: title, widget: string },
-      - { label: Founder, name: founder, widget: string },
-      - { label: Pic, name: pic, widget: image },
+      - { label: Name, name: name, widget: string }
+      - { label: LinkedIn, name: linkedin, widget: string }
+      - { label: Description, name: description, widget: markdown }
+      - { label: Title, name: title, widget: string }
+      - { label: Founder, name: founder, widget: string }
+      - { label: Pic, name: pic, widget: image }
       - {
           label: Boards,
           name: boards,
@@ -35,6 +35,7 @@ collections:
               { label: Logo, name: logo, widget: image },
             ],
         }
+      - { label: BoardsSubheading, name: boardsSubheading, widget: string }
       - {
           label: Recognitions,
           name: recognitions,
@@ -47,6 +48,11 @@ collections:
             ],
         }
       - {
+          label: RecognitionsSubheading,
+          name: recognitionsSubheading,
+          widget: string,
+        }
+      - {
           label: Media,
           name: media,
           widget: list,
@@ -57,6 +63,7 @@ collections:
               { label: Logo, name: logo, widget: image },
             ],
         }
+      - { label: mediaSubheading, name: MediaSubheading, widget: string }
 
   - name: "pages"
     label: "Pages"

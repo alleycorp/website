@@ -5,9 +5,12 @@ name: Alison Hill
 pic: /img/alison-hill.png
 title: Chief of Stuff
 founder: false
-recognitions: 
-boards: 
+recognitions:
+recognitionsSubHeading: blank
+boards:
+boardsSubHeading: blank
 media:
+mediaSubHeading: blank
 ---
 
 Alison Hill is a top-level Executive/Personal Assistant with more than
