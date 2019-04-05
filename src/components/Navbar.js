@@ -20,7 +20,7 @@ const Navbar = class extends React.Component {
         <div className="db dtc-l v-mid w-100 w-75-l tc tr-l pb0-l pv2">
           <a
             className="link pointer hover-light-blue dark-gray f4 f4-l dib mr3 mr4-l"
-            onClick={() => [navigateTo("/kevin-ryan")]}
+            onClick={() => [navigateTo("/person/kevin-ryan")]}
           >
             Kevin Ryan
           </a>

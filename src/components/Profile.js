@@ -1,11 +1,17 @@
 import * as React from "react";
 
-import { Linkedin } from "react-feather";
+import { navigateTo } from "gatsby";
+import _ from "lodash";
 
 const Profile = props => {
   return (
     <div className={`mv2`}>
-      <a className={`link`} href={props.linkedin}>
+      <a
+        className={`link`}
+        onClick={() => [
+          navigateTo(`/person/${_.toLower(_.replace(props.name, " ", "-"))}`)
+        ]}
+      >
         <div className={`dt ba br4 b--light-gray pa4 lh-copy grow pointer`}>
           <div className={`dt-row`}>
             <img

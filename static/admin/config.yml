@@ -6,23 +6,57 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+  - name: "person"
+    label: "Person"
+    folder: "src/pages/person"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {
           label: "Template Key",
           name: "templateKey",
           widget: "hidden",
-          default: "blog-post",
+          default: "person",
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: Name, name: name, widget: string },
+      - { label: LinkedIn, name: linkedin, widget: string },
+      - { label: Description, name: description, widget: markdown },
+      - { label: Title, name: title, widget: string },
+      - { label: Founder, name: founder, widget: string },
+      - { label: Pic, name: pic, widget: image },
+      - {
+          label: Boards,
+          name: boards,
+          widget: list,
+          fields:
+            [
+              { label: Name, name: name, widget: string },
+              { label: URL, name: url, widget: string },
+              { label: Logo, name: logo, widget: image },
+            ],
+        }
+      - {
+          label: Recognitions,
+          name: recognitions,
+          widget: list,
+          fields:
+            [
+              { label: Name, name: name, widget: string },
+              { label: URL, name: url, widget: string },
+              { label: Logo, name: logo, widget: image },
+            ],
+        }
+      - {
+          label: Media,
+          name: media,
+          widget: list,
+          fields:
+            [
+              { label: Name, name: name, widget: string },
+              { label: URL, name: url, widget: string },
+              { label: Logo, name: logo, widget: image },
+            ],
+        }
 
   - name: "pages"
     label: "Pages"
@@ -114,8 +148,6 @@ collections:
               fields:
                 [
                   { label: Name, name: name, widget: string },
-                  { label: LinkedIn, name: linkedin, widget: string },
-                  { label: Description, name: description, widget: markdown },
                   { label: Title, name: title, widget: string },
                   { label: Founder, name: founder, widget: string },
                   { label: Pic, name: pic, widget: image },

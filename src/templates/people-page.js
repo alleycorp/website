@@ -66,8 +66,6 @@ export const peoplePageQuery = graphql`
       frontmatter {
         people {
           name
-          linkedin
-          description
           title
           founder
           pic {
