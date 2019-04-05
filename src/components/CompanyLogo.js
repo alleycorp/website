@@ -27,8 +27,8 @@ class CompanyLogo extends React.Component {
           });
         }}
       >
-        <article class="fl w-25 pa2 grow pointer ">
-          <div class="aspect-ratio aspect-ratio--1x1">
+        <article className="fl w-25 pa2 grow pointer ">
+          <div className="aspect-ratio aspect-ratio--1x1">
             <img
               style={{
                 backgroundImage: `url(${
@@ -37,7 +37,7 @@ class CompanyLogo extends React.Component {
                     : company.logo
                 })`
               }}
-              class="db bg-center cover aspect-ratio--object br4"
+              className="db bg-center cover aspect-ratio--object br4"
             />
           </div>
         </article>

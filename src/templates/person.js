@@ -105,39 +105,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        boards {
-          name
-          url
-          logo {
-            childImageSharp {
-              fluid(maxWidth: 250, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-        recognitions {
-          name
-          url
-          logo {
-            childImageSharp {
-              fluid(maxWidth: 250, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-        media {
-          name
-          url
-          logo {
-            childImageSharp {
-              fluid(maxWidth: 250, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
       }
     }
   }

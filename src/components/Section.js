@@ -12,7 +12,7 @@ class Section extends React.Component {
     const {
       children,
       heading,
-      subheading,
+      Subheading,
       cta,
       path,
       isHeadingLeft,
@@ -24,7 +24,7 @@ class Section extends React.Component {
         <div className={`dtc-l dt-row w-50 v-mid`}>
           <div className={`f3 measure-narrow center lh-copy pa4`}>
             <div className={`f3 dark-gray fw4 pb4`}>{heading}</div>
-            <div className={`f4 gray fw2`}>{subheading}</div>
+            <div className={`f4 gray fw2`}>{Subheading}</div>
             <div className={`pt4`}>
               <LinkToPage text={cta} path={path} />
             </div>

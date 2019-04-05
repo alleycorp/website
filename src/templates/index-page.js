@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({
     {/* Header */}
     <Section
       heading={heading}
-      subheading={""}
+      Subheading={""}
       cta={cta}
       path={"/contact"}
       isHeadingLeft={true}
@@ -46,7 +46,7 @@ export const IndexPageTemplate = ({
     {/* Companies */}
     <Section
       heading={companiesHeading}
-      subheading={companiesSubheading}
+      Subheading={companiesSubheading}
       cta={companiesCta}
       path={"/companies"}
       isHeadingLeft={true}
@@ -68,7 +68,7 @@ export const IndexPageTemplate = ({
     {/* Investors  */}
     <Section
       heading={investorsHeading}
-      subheading={investorsSubheading}
+      Subheading={investorsSubheading}
       cta={investorsCta}
       path={"/companies"}
       isHeadingLeft={false}

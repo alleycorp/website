@@ -6,11 +6,11 @@ pic: /img/wendy-tsu.png
 title: New Business Ventures Partner
 founder: false
 recognitions:
-recognitionsSubHeading: blank
+recognitionsSubheading: blank
 boards:
-boardsSubHeading: blank
+boardsSubheading: blank
 media:
-mediaSubHeading: blank
+mediaSubheading: blank
 ---
 
 Wendy is responsible for diligencing new seed-investment opportunities and
