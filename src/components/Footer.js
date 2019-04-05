@@ -3,7 +3,7 @@ import * as React from "react";
 const Footer = props => {
   return (
     <div className={`w-100 bt b--light-gray pv5 mt6`}>
-      <div className={`measure-wide center f5 gray`}>
+      <div className={`measure-narrow center f5 gray`}>
         <div className={`dt`}>
           <div className={`dt-row h2`}>
             Email us at{" "}
@@ -26,7 +26,7 @@ const Footer = props => {
               className={`link dark-gray`}
               href={"https://goo.gl/maps/cWtybifWLdk"}
             >
-              1633 Broadway, 38th Floor New York City, New York
+              1633 Broadway, 38th Flr, NY, NY
             </a>
           </div>
         </div>

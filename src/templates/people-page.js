@@ -6,18 +6,11 @@ import { ChevronRight } from "react-feather";
 
 export const PeoplePageTemplate = ({ people }) => {
   return (
-    <div className={`dt center pt5`}>
+    <div className={`w-90 dt center pt5`}>
       <div className={`dt-row cf`}>
-        {people.map((person, index) => {
-          if (person.name === "Kevin Ryan") {
-            return (
-              <div key={person.name} className={`w-100 pa3`}>
-                <Profile {...person} />
-              </div>
-            );
-          }
+        {people.map(person => {
           return (
-            <div key={person.name} className={`fl w-100 w-third-l pa3`}>
+            <div key={person.name} className={`fl w-100 w-50-m w-25-l pa3`}>
               <Profile {...person} />
             </div>
           );

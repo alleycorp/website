@@ -24,7 +24,7 @@ const Profile = props => {
           </div>
           <div className={`dt-row`}>
             <div className={`dt pt2`}>
-              <div className={`dtc f4 fw5 f5 gray v-mid pr2`}>
+              <div className={`dtc f4 fw6 f6 gray v-mid pr2`}>
                 {props.title}
               </div>
               {props.founder && (

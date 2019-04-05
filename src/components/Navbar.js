@@ -8,7 +8,7 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav className="db dt-l w-100 b border-box pa3 b ph5-l fixed z-max">
+      <nav className="db dt-l w-100 b border-box pa3 b ph5-l z-max">
         <a
           className="db dtc-l v-mid mid-gray link pointer dim w-100 w-25-l f2 tc tl-l mb2 mb0-l pb2"
           onClick={() => [navigateTo("/")]}
