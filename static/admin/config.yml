@@ -38,7 +38,14 @@ collections:
               default: "index-page",
             }
           - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
+          - { label: CTA, name: cta, widget: string }
+          - { label: InvestorsHeading, name: investorsHeading, widget: string }
+          - {
+              label: InvestorsSubheading,
+              name: investorsSubheading,
+              widget: string,
+            }
+          - { label: InvestorsCTA, name: investorsCta, widget: string }
           - {
               label: VCs,
               name: vcs,
@@ -50,6 +57,13 @@ collections:
                   { label: Logo, name: logo, widget: image },
                 ],
             }
+          - { label: CompaniesHeading, name: companiesHeading, widget: string }
+          - {
+              label: CompaniesSubheading,
+              name: companiesSubheading,
+              widget: string,
+            }
+          - { label: CompaniesCTA, name: companiesCta, widget: string }
           - {
               label: Companies,
               name: companies,

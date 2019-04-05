@@ -1,11 +1,11 @@
 ---
 templateKey: index-page
-title: AlleyCorp
-image: /img/new-york.jpeg
-kevin: /img/kevin-ryan.png
 heading: Founding and funding companies in New York City.
-subheading: >-
-  Whether its the first check in or the first conversation about a new idea, we are here to build the next generation of great companies in Silicon Alley.
+cta: Brainstorm with us
+investorsHeading: Our co-investors
+investorsSubheading: >-
+  Growing a startup is all about choosing the right partners. We can help you find those
+investorsCta: See more co-investors
 vcs:
   - logo: /img/usv.png
     name: USV
@@ -69,6 +69,10 @@ exits:
   - logo: /img/gilt.jpg
     name: Gilt Groupe
     url: www.gilt.com
+companiesHeading: Our companies
+companiesSubheading: >-
+  Whether its the first check in or the first conversation about a new idea, we are here to build the next generation of great companies in Silicon Alley.
+companiesCta: See more companies
 investments:
   - logo: /img/anvyl.jpg
     name: Anvyl

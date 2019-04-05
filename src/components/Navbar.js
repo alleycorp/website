@@ -8,7 +8,7 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav className="db dt-l w-100 b border-box pa3 b ph5-l ">
+      <nav className="db dt-l w-100 b border-box pa3 b ph5-l fixed z-max">
         <a
           className="db dtc-l v-mid mid-gray link pointer dim w-100 w-25-l f2 tc tl-l mb2 mb0-l pb2"
           onClick={() => [navigateTo("/")]}
@@ -17,7 +17,13 @@ const Navbar = class extends React.Component {
             <img src={`/img/alleycorp-name.png`} style={{ maxHeight: "1em" }} />
           </div>
         </a>
-        <div className="db dtc-l v-mid w-100 w-75-l tc tr-l pb0-l pb2">
+        <div className="db dtc-l v-mid w-100 w-75-l tc tr-l pb0-l pv2">
+          <a
+            className="link pointer hover-light-blue dark-gray f4 f4-l dib mr3 mr4-l"
+            onClick={() => [navigateTo("/kevin-ryan")]}
+          >
+            Kevin Ryan
+          </a>
           <a
             className="link pointer hover-light-blue dark-gray f4 f4-l dib mr3 mr4-l"
             onClick={() => [navigateTo("/people")]}
