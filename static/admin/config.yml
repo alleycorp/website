@@ -80,6 +80,7 @@ collections:
             }
           - { label: Heading, name: heading, widget: string }
           - { label: CTA, name: cta, widget: string }
+          - { label: Image, name: image, widget: image }
           - { label: InvestorsHeading, name: investorsHeading, widget: string }
           - {
               label: InvestorsSubheading,

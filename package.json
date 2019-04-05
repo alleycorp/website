@@ -21,6 +21,7 @@
     "gatsby-transformer-sharp": "^2.1.9",
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
+    "marked": "0.6.2",
     "netlify-cms": "^2.6.1",
     "node-sass": "^4.11.0",
     "parcel-bundler": "^1.9.4",
@@ -29,8 +30,7 @@
     "react-dom": "^16.8.4",
     "react-feather": "1.1.6",
     "react-helmet": "^5.2.0",
-    "uuid": "^3.2.1",
-    "victory": "32.1.0"
+    "uuid": "^3.2.1"
   },
   "keywords": [
     "gatsby"

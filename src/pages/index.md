@@ -1,7 +1,8 @@
 ---
 templateKey: index-page
-heading: Founding and funding companies in New York City.
+heading: Founding and funding companies in Silicon Alley (NYC).
 cta: Brainstorm with us
+image: /img/alley-nyc.jpeg
 investorsHeading: Our co-investors
 investorsSubheading: >-
   Growing a startup is all about choosing the right partners. We can help you find those

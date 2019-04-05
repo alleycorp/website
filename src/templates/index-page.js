@@ -3,9 +3,7 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import CompanyLogo from "../components/CompanyLogo";
-import LinkToPage from "../components/LinkToPage";
 import Section from "../components/Section";
-import { VictoryLine } from "victory";
 
 export const IndexPageTemplate = ({
   heading,
@@ -19,7 +17,8 @@ export const IndexPageTemplate = ({
   vcs,
   companies,
   exits,
-  investments
+  investments,
+  image
 }) => (
   <div className={`dt w-90 center`}>
     {/* Header */}
@@ -31,15 +30,11 @@ export const IndexPageTemplate = ({
       isHeadingLeft={true}
       hasBorder={false}
     >
-      <VictoryLine
-        interpolation="natural"
-        data={[
-          { x: 1, y: 2 },
-          { x: 2, y: 3 },
-          { x: 3, y: 5 },
-          { x: 4, y: 4 },
-          { x: 5, y: 6 }
-        ]}
+      <img
+        src={!!image.childImageSharp ? image.childImageSharp.fluid.src : image}
+        alt={"New York City"}
+        className={`br4 pa2 center`}
+        width={500}
       />
     </Section>
 
@@ -49,7 +44,7 @@ export const IndexPageTemplate = ({
       Subheading={companiesSubheading}
       cta={companiesCta}
       path={"/companies"}
-      isHeadingLeft={true}
+      isHeadingLeft={false}
       hasBorder={true}
     >
       <section class="cf w-100 pa2">
@@ -71,7 +66,7 @@ export const IndexPageTemplate = ({
       Subheading={investorsSubheading}
       cta={investorsCta}
       path={"/companies"}
-      isHeadingLeft={false}
+      isHeadingLeft={true}
       hasBorder={true}
     >
       <section class="cf w-100 pa2">
@@ -101,6 +96,7 @@ const IndexPage = ({ data }) => {
         companies={frontmatter.companies}
         exits={frontmatter.exits}
         investments={frontmatter.investments}
+        image={frontmatter.image}
       />
     </Layout>
   );
@@ -113,6 +109,13 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         heading
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1000, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         cta
         investorsHeading
         investorsSubheading

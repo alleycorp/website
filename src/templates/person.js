@@ -2,20 +2,18 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
+import { HTMLContent } from "../components/Content";
+import marked from "marked";
 
 export const PersonTemplate = ({
-  content,
-  contentComponent,
   title,
   helmet,
   pic,
   name,
   founder,
-  linkedin
+  linkedin,
+  description
 }) => {
-  const PersonContent = contentComponent || Content;
-
   return (
     <div className={`w-90 center`}>
       {helmet || ""}
@@ -50,9 +48,10 @@ export const PersonTemplate = ({
           </div>
         </header>
         <div className="fn fl-l w-50-l">
-          <p className="lh-copy measure mt4 mt0-l">
-            <PersonContent content={content} />
-          </p>
+          <p
+            className="lh-copy measure mt4 mt0-l"
+            dangerouslySetInnerHTML={{ __html: marked(description) }}
+          />
         </div>
       </article>
     </div>
@@ -65,8 +64,6 @@ const Person = ({ data }) => {
   return (
     <Layout>
       <PersonTemplate
-        content={post.html}
-        contentComponent={HTMLContent}
         helmet={
           <Helmet titleTemplate="%s | People">
             <title>{`${post.frontmatter.name}`}</title>
@@ -78,6 +75,7 @@ const Person = ({ data }) => {
         founder={post.frontmatter.founder}
         linkedin={post.frontmatter.linkedin}
         pic={post.frontmatter.pic}
+        description={post.frontmatter.description}
       />
     </Layout>
   );
@@ -94,6 +92,7 @@ export const pageQuery = graphql`
         name
         title
         founder
+        description
         linkedin
         boardsSubheading
         recognitionsSubheading
