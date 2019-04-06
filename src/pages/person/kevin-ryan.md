@@ -24,7 +24,28 @@ description: >-
 title: Partner
 founder: true
 pic: /img/kevin-ryan.png
-boards: []
+boards:
+  - logo: /img/innovation-council.png
+    name: Chairman
+    url: 'https://innovateinnyc.org/#council'
+  - logo: /img/partnership-for-nyc.png
+    name: Vice Chairman
+    url: 'https://pfnyc.org/'
+  - logo: /img/yale.jpg
+    name: Alumni + Investment Committee
+    url: 'https://www.yale.edu/'
+  - logo: /img/governors-logo.jpg
+    name: Board Director
+    url: 'https://govisland.com/about/the-trust-for-governors-island'
+  - logo: /img/mercycorps.jpg
+    name: Board Director
+    url: 'https://www.mercycorps.org/'
+  - logo: /img/technyc.png
+    name: Board Member
+    url: 'https://www.technyc.org/'
+  - logo: /img/hrw.png
+    name: Director Emiritus
+    url: 'https://www.hrw.org/'
 boardsSubheading: blank
 recognitions:
   - logo: /img/crains.png
