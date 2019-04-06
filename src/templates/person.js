@@ -160,8 +160,8 @@ const Person = ({ data }) => {
         description={post.frontmatter.description}
         boardsSubheading={post.frontmatter.boardsSubheading}
         recognitionsSubheading={post.frontmatter.recognitionsSubheading}
-        engagementsSubheading={post.frontmatter.engagementsSubheading}
-        mediaSubheading={post.frontmatter.mediaSubheading}
+        engagementsSubheading={post.frontmatter.EngagementsSubheading}
+        mediaSubheading={post.frontmatter.MediaSubheading}
         media={post.frontmatter.media}
         boards={post.frontmatter.boards}
         recognitions={post.frontmatter.recognitions}
@@ -186,8 +186,8 @@ export const pageQuery = graphql`
         linkedin
         boardsSubheading
         recognitionsSubheading
-        mediaSubheading
-        engagementsSubheading
+        MediaSubheading
+        EngagementsSubheading
         engagements {
           name
           url

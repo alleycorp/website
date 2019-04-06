@@ -26,6 +26,7 @@ class CompanyLogo extends React.Component {
             isMouseOver: false
           });
         }}
+        target="_blank"
       >
         <article className="fl w-25 pa2 grow pointer ">
           <div className="aspect-ratio aspect-ratio--1x1">
