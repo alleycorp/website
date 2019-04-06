@@ -1,38 +1,27 @@
 ---
 templateKey: person
-linkedin: "https://www.linkedin.com/in/wendytsu/"
 name: Wendy Tsu
-pic: /img/wendy-tsu.png
-title: New Business Ventures Partner
-founder: false
-recognitionsSubheading: blank
-boardsSubheading: blank
-mediaSubheading: blank
-media:
-  - logo: /img/usv.png
-    name: USV
-    url: "https://www.usv.com/"
-boards:
-  - logo: /img/usv.png
-    name: USV
-    url: "https://www.usv.com/"
-recognitions:
-  - logo: /img/usv.png
-    name: USV
-    url: "https://www.usv.com/"
-engagements:
-  - logo: /img/usv.png
-    name: USV
-    url: "https://www.usv.com/"
-engagementsSubheading: test
+linkedin: 'https://www.linkedin.com/in/wendytsu/'
 description: >-
   Wendy is responsible for diligencing new seed-investment opportunities and
   leading AlleyCorp's incubation methodology for new ventures. Prior to
-  graduating from the Stanford Graduate School of Business (GSB), She worked
-  as an investor at the Chan Zuckerberg Initiative, a Strategy & Operations
-  consultant for Deloitte Consulting to companies like NIKE, and as a
-  product manager at PayPal. She graduated with honors in Business
-  Administration from the University of California, Berkeley. She currently
-  serves on the Smithsonian Bird Friendly Committee and is the Co-Chair of
-  GSB's NYC Alumni Ambassador Program.
+  graduating from the Stanford Graduate School of Business (GSB), She worked as
+  an investor at the Chan Zuckerberg Initiative, a Strategy & Operations
+  consultant for Deloitte Consulting to companies like NIKE, and as a product
+  manager at PayPal. She graduated with honors in Business Administration from
+  the University of California, Berkeley. She currently serves on the
+  Smithsonian Bird Friendly Committee and is the Co-Chair of GSB's NYC Alumni
+  Ambassador Program.
+title: New Business Ventures Partner
+founder: false
+pic: /img/wendy-tsu.png
+boards: []
+boardsSubheading: blank
+recognitions: []
+recognitionsSubheading: blank
+media: []
+MediaSubheading: blank
+engagements: []
+EngagementsSubheading: blank
 ---
+
