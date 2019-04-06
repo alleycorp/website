@@ -2,8 +2,10 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
+import Section from "../components/Section";
 import { HTMLContent } from "../components/Content";
 import marked from "marked";
+import { Linkedin } from "react-feather";
 
 export const PersonTemplate = ({
   title,
@@ -12,7 +14,10 @@ export const PersonTemplate = ({
   name,
   founder,
   linkedin,
-  description
+  description,
+  boardsSubheading,
+  recognitionsSubheading,
+  mediaSubheading
 }) => {
   return (
     <div className={`w-90 center`}>
@@ -31,7 +36,10 @@ export const PersonTemplate = ({
               />
             </div>
             <div className={`dt-row`}>
-              <div className={`f4 fw3 dark-gray pt2`}>{name}</div>
+              <div className={`f4 fl fw3 dark-gray pt2`}>{name}</div>
+              <div className={`fr pr3 dark-gray hover-light-blue pointer`}>
+                <Linkedin />
+              </div>
             </div>
             <div className={`dt-row`}>
               <div className={`dt pt2`}>
@@ -54,6 +62,38 @@ export const PersonTemplate = ({
           />
         </div>
       </article>
+      <div className={`dt center w-90`}>
+        <Section
+          heading={`Recognitions`}
+          Subheading={recognitionsSubheading}
+          cta={``}
+          path={``}
+          isHeadingLeft={true}
+          hasBorder={true}
+        >
+          image
+        </Section>
+        <Section
+          heading={`Boards`}
+          Subheading={boardsSubheading}
+          cta={``}
+          path={``}
+          isHeadingLeft={false}
+          hasBorder={true}
+        >
+          image
+        </Section>
+        <Section
+          heading={`Media`}
+          Subheading={mediaSubheading}
+          cta={``}
+          path={``}
+          isHeadingLeft={true}
+          hasBorder={true}
+        >
+          image
+        </Section>
+      </div>
     </div>
   );
 };
@@ -76,6 +116,9 @@ const Person = ({ data }) => {
         linkedin={post.frontmatter.linkedin}
         pic={post.frontmatter.pic}
         description={post.frontmatter.description}
+        boardsSubheading={post.frontmatter.boardsSubheading}
+        recognitionsSubheading={post.frontmatter.recognitionsSubheading}
+        mediaSubheading={post.frontmatter.mediaSubheading}
       />
     </Layout>
   );

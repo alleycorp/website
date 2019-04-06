@@ -25,9 +25,11 @@ class Section extends React.Component {
           <div className={`f3 measure-narrow center lh-copy pa4`}>
             <div className={`f3 dark-gray fw4 pb4`}>{heading}</div>
             <div className={`f4 gray fw2`}>{Subheading}</div>
-            <div className={`pt4`}>
-              <LinkToPage text={cta} path={path} />
-            </div>
+            {cta ? (
+              <div className={`pt4`}>
+                <LinkToPage text={cta} path={path} />
+              </div>
+            ) : null}
           </div>
         </div>
       );
