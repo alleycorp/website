@@ -20,6 +20,11 @@ recognitions:
   - logo: /img/usv.png
     name: USV
     url: "https://www.usv.com/"
+engagements:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
+engagementsSubheading: test
 description: >-
   Wendy is responsible for diligencing new seed-investment opportunities and
   leading AlleyCorp's incubation methodology for new ventures. Prior to

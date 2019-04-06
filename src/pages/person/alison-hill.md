@@ -30,4 +30,9 @@ description: >-
   she isn’t glued to a laptop, she enjoys spending time at the beach,
   exploring other countries/cultures, and relentlessly trying to develop a
   passion for running.
+engagements:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
+engagementsSubheading: test
 ---

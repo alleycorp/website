@@ -20,7 +20,9 @@ export const PersonTemplate = ({
   mediaSubheading,
   media,
   recognitions,
-  boards
+  boards,
+  engagements,
+  engagementsSubheading
 }) => {
   return (
     <div className={`w-90 center`}>
@@ -42,7 +44,7 @@ export const PersonTemplate = ({
               <div className={`f4 fl fw3 dark-gray pt2`}>{name}</div>
               <a
                 href={linkedin}
-                className={`fr link pr3 dark-gray hover-light-blue pointer`}
+                className={`fr link pr3 gray hover-light-blue pointer`}
               >
                 <Linkedin />
               </a>
@@ -101,13 +103,29 @@ export const PersonTemplate = ({
             </section>
           </Section>
         ) : null}
+        {engagements.length ? (
+          <Section
+            heading={`Engagements`}
+            Subheading={engagementsSubheading}
+            cta={``}
+            path={``}
+            isHeadingLeft={true}
+            hasBorder={true}
+          >
+            <section class="cf w-100 pa2">
+              {engagements.map(e => (
+                <CompanyLogo company={e} />
+              ))}
+            </section>
+          </Section>
+        ) : null}
         {media.length ? (
           <Section
             heading={`Media`}
             Subheading={mediaSubheading}
             cta={``}
             path={``}
-            isHeadingLeft={true}
+            isHeadingLeft={false}
             hasBorder={true}
           >
             <section class="cf w-100 pa2">
@@ -142,10 +160,12 @@ const Person = ({ data }) => {
         description={post.frontmatter.description}
         boardsSubheading={post.frontmatter.boardsSubheading}
         recognitionsSubheading={post.frontmatter.recognitionsSubheading}
+        engagementsSubheading={post.frontmatter.engagementsSubheading}
         mediaSubheading={post.frontmatter.mediaSubheading}
         media={post.frontmatter.media}
         boards={post.frontmatter.boards}
         recognitions={post.frontmatter.recognitions}
+        engagements={post.frontmatter.engagements}
       />
     </Layout>
   );
@@ -167,6 +187,18 @@ export const pageQuery = graphql`
         boardsSubheading
         recognitionsSubheading
         mediaSubheading
+        engagementsSubheading
+        engagements {
+          name
+          url
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
         media {
           name
           url
