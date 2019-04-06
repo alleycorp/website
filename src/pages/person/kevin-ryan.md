@@ -42,7 +42,34 @@ recognitions:
     name: 100 Most Influential New Yorkers
     url: 'https://observer.com/2013/03/top-100/'
 recognitionsSubheading: blank
-media: []
+media:
+  - logo: /img/fortune.png
+    name: The Godfather of NYC Tech
+    url: 'http://fortune.com/2014/06/30/kevin-ryan-interview-gilt-groupe/'
+  - logo: /img/wsj.png
+    name: Silicon Alley Insider
+    url: 'https://www.wsj.com/articles/SB10001424052970203554104576655342371940156'
+  - logo: /img/forbes.png
+    name: The Duo Behind New York's Biggest Tech Companies
+    url: >-
+      https://www.forbes.com/sites/jjcolao/2013/07/24/gilt-10gen-doubleclick-meet-the-duo-behind-new-yorks-most-successful-tech-companies/#6e217c1a30c4
+  - logo: /img/economist.jpg
+    name: Making it Click
+    url: 'https://www.economist.com/business/2012/02/25/making-it-click'
+  - logo: /img/mashable.jpg
+    name: The Man Behind the Rise of Gilt & DoubleClick
+    url: 'https://mashable.com/2011/09/15/kevin-ryan-interview/#fYukTCEEoEqw'
+  - logo: /img/inc.jpg
+    name: The Chief Recruiter
+    url: >-
+      https://www.inc.com/magazine/20100301/the-chief-recruiter-kevin-p-ryan-alleycorp.html#
+  - logo: /img/nyt.jpg
+    name: AlleyCorp Churns Out Grab Bag of Tech Companies
+    url: >-
+      https://www.nytimes.com/2012/09/01/technology/alleycorp-seeds-a-blossoming-internet-hub-in-new-york.html
+  - logo: /img/recode.png
+    name: Fixing Healthcare Next
+    url: 'https://www.recode.net/2016/7/25/12276332/kevin-ryan-nomad-health-funding'
 MediaSubheading: test
 ---
 
