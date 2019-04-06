@@ -24,19 +24,25 @@ description: >-
 title: Partner
 founder: true
 pic: /img/kevin-ryan.png
+boards: []
 boardsSubheading: blank
-recognitionsSubheading: blank
-MediaSubheading: test
-media:
-  - logo: /img/usv.png
-    name: USV
-    url: "https://www.usv.com/"
-boards:
-  - logo: /img/usv.png
-    name: USV
-    url: "https://www.usv.com/"
 recognitions:
-  - logo: /img/usv.png
-    name: USV
-    url: "https://www.usv.com/"
+  - logo: /img/crains.png
+    name: 50 Most Influential Business People
+    url: 'https://www.crainsnewyork.com/awards/40-under-40-class-2001'
+  - logo: /img/ey.png
+    name: Entrepreneur of the Year
+    url: >-
+      https://www.ey.com/us/en/about-us/entrepreneurship/entrepreneur-of-the-year
+  - logo: /img/vanity-fair.png
+    name: New Establishment List
+    url: >-
+      https://www.vanityfair.com/news/2011/09/the-2011-new-establishment-list--and-the-top-spot-goes-to---
+  - logo: /img/observer.jpg
+    name: 100 Most Influential New Yorkers
+    url: 'https://observer.com/2013/03/top-100/'
+recognitionsSubheading: blank
+media: []
+MediaSubheading: test
 ---
+
