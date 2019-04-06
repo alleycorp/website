@@ -27,4 +27,16 @@ pic: /img/kevin-ryan.png
 boardsSubheading: blank
 recognitionsSubheading: blank
 MediaSubheading: test
+media:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
+boards:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
+recognitions:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
 ---

@@ -5,12 +5,21 @@ name: Dwight Merriman
 pic: /img/dwight-merriman.png
 title: Advisor
 founder: true
-recognitions:
 recognitionsSubheading: blank
-boards:
 boardsSubheading: blank
-media:
 mediaSubheading: blank
+media:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
+boards:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
+recognitions:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
 description: >-
   Dwight Merriman is the co-founder of AlleyCorp and one of the original
   authors of MongoDB, the open-source document database. In 1995, he

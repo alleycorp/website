@@ -5,12 +5,21 @@ name: Wendy Tsu
 pic: /img/wendy-tsu.png
 title: New Business Ventures Partner
 founder: false
-recognitions:
 recognitionsSubheading: blank
-boards:
 boardsSubheading: blank
-media:
 mediaSubheading: blank
+media:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
+boards:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
+recognitions:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
 description: >-
   Wendy is responsible for diligencing new seed-investment opportunities and
   leading AlleyCorp's incubation methodology for new ventures. Prior to

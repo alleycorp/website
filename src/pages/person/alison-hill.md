@@ -5,12 +5,21 @@ name: Alison Hill
 pic: /img/alison-hill.png
 title: Chief of Stuff
 founder: false
-recognitions:
 recognitionsSubheading: blank
-boards:
 boardsSubheading: blank
-media:
 mediaSubheading: blank
+media:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
+boards:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
+recognitions:
+  - logo: /img/usv.png
+    name: USV
+    url: "https://www.usv.com/"
 description: >-
   Alison Hill is a top-level Executive/Personal Assistant with more than
   twenty years experience supporting some of New York’s most prestigious

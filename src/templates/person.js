@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
-import { HTMLContent } from "../components/Content";
+import CompanyLogo from "../components/CompanyLogo";
 import marked from "marked";
 import { Linkedin } from "react-feather";
 
@@ -17,7 +17,10 @@ export const PersonTemplate = ({
   description,
   boardsSubheading,
   recognitionsSubheading,
-  mediaSubheading
+  mediaSubheading,
+  media,
+  recognitions,
+  boards
 }) => {
   return (
     <div className={`w-90 center`}>
@@ -37,9 +40,12 @@ export const PersonTemplate = ({
             </div>
             <div className={`dt-row`}>
               <div className={`f4 fl fw3 dark-gray pt2`}>{name}</div>
-              <div className={`fr pr3 dark-gray hover-light-blue pointer`}>
+              <a
+                href={linkedin}
+                className={`fr link pr3 dark-gray hover-light-blue pointer`}
+              >
                 <Linkedin />
-              </div>
+              </a>
             </div>
             <div className={`dt-row`}>
               <div className={`dt pt2`}>
@@ -63,36 +69,54 @@ export const PersonTemplate = ({
         </div>
       </article>
       <div className={`dt center w-90`}>
-        <Section
-          heading={`Recognitions`}
-          Subheading={recognitionsSubheading}
-          cta={``}
-          path={``}
-          isHeadingLeft={true}
-          hasBorder={true}
-        >
-          image
-        </Section>
-        <Section
-          heading={`Boards`}
-          Subheading={boardsSubheading}
-          cta={``}
-          path={``}
-          isHeadingLeft={false}
-          hasBorder={true}
-        >
-          image
-        </Section>
-        <Section
-          heading={`Media`}
-          Subheading={mediaSubheading}
-          cta={``}
-          path={``}
-          isHeadingLeft={true}
-          hasBorder={true}
-        >
-          image
-        </Section>
+        {recognitions.length ? (
+          <Section
+            heading={`Recognitions`}
+            Subheading={recognitionsSubheading}
+            cta={``}
+            path={``}
+            isHeadingLeft={true}
+            hasBorder={true}
+          >
+            <section class="cf w-100 pa2">
+              {recognitions.map(r => (
+                <CompanyLogo company={r} />
+              ))}
+            </section>
+          </Section>
+        ) : null}
+        {boards.length ? (
+          <Section
+            heading={`Boards`}
+            Subheading={boardsSubheading}
+            cta={``}
+            path={``}
+            isHeadingLeft={false}
+            hasBorder={true}
+          >
+            <section class="cf w-100 pa2">
+              {boards.map(b => (
+                <CompanyLogo company={b} />
+              ))}
+            </section>
+          </Section>
+        ) : null}
+        {media.length ? (
+          <Section
+            heading={`Media`}
+            Subheading={mediaSubheading}
+            cta={``}
+            path={``}
+            isHeadingLeft={true}
+            hasBorder={true}
+          >
+            <section class="cf w-100 pa2">
+              {media.map(m => (
+                <CompanyLogo company={m} />
+              ))}
+            </section>
+          </Section>
+        ) : null}
       </div>
     </div>
   );
@@ -119,6 +143,9 @@ const Person = ({ data }) => {
         boardsSubheading={post.frontmatter.boardsSubheading}
         recognitionsSubheading={post.frontmatter.recognitionsSubheading}
         mediaSubheading={post.frontmatter.mediaSubheading}
+        media={post.frontmatter.media}
+        boards={post.frontmatter.boards}
+        recognitions={post.frontmatter.recognitions}
       />
     </Layout>
   );
@@ -140,6 +167,39 @@ export const pageQuery = graphql`
         boardsSubheading
         recognitionsSubheading
         mediaSubheading
+        media {
+          name
+          url
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        boards {
+          name
+          url
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        recognitions {
+          name
+          url
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 250, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
         pic {
           childImageSharp {
             fluid(maxWidth: 500, quality: 100) {
