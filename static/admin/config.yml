@@ -97,7 +97,12 @@ collections:
       - { label: Description, name: description, widget: markdown }
       - { label: Pic, name: pic, widget: image }
       - { label: URL, name: url, widget: string }
-      - { label: Category, name: category, widget: select, options: ["exited" "founded", "invested"] }
+      - {
+          label: Category,
+          name: category,
+          widget: select,
+          options: ["exited", "founded", "invested"],
+        }
   - name: "investor"
     label: "Investor"
     folder: "src/pages/investor"
@@ -129,9 +134,6 @@ collections:
       - { label: Company, name: company, widget: string }
       - { label: Pic, name: pic, widget: image }
       - { label: URL, name: url, widget: string }
-  
-
-
 
   - name: "pages"
     label: "Pages"
