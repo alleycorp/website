@@ -1,12 +1,15 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: Chain
+status: Founded
 description: >-
-  # IPO October 2017
+  # Operates Blockchain Networks
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
-category: exited
-pic: /img/mongo.png
+  Founded in 2014, Chain is a blockchain company that partners with financial
+  firms. Other investors include Khosla Ventures, RRE Ventures. Recently merged
+  with Lightyear to form Interstellar.
+pic: /img/chain.jpeg
+url: 'https://chain.com/'
+category: invested
 ---
+
