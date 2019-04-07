@@ -1,12 +1,16 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: Spring
+status: Invested
 description: >-
-  # IPO October 2017
+  # Employee Mental Health
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
-category: exited
+  Founded in 2016, Spring aims to use its proprietary technology developed at
+  Yale to provide employees with a go-to mental health solution. Raised $6M seed
+  round led by Rethink Impact with participation From Work-Bench, RRE, BBG, and
+  others.
 pic: /img/mongo.png
+url: 'https://www.springhealth.com/'
+category: invested
 ---
+
