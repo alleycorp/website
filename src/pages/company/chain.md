@@ -1,7 +1,7 @@
 ---
 templateKey: company
 name: Samada
-status: IPO
+status: Acquired
 description: >-
   # Acquired by Care.com in 2018
 
