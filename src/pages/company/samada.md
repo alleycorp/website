@@ -1,12 +1,15 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: Anvyl
+status: Invested
 description: >-
-  # IPO October 2017
+  # Analytics for Global Manufacturing
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
-category: exited
+  Founded in 2017, Anvyl is using analytics to reinvent supply chains to make
+  products better, smarter and easier. Anvyl's additional investors include
+  First Round Capital. 
 pic: /img/mongo.png
+url: 'https://anvyl.com/'
+category: invested
 ---
+
