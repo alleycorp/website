@@ -1,7 +1,7 @@
 ---
 templateKey: company
 name: Chain
-status: Founded
+status: Invested
 description: >-
   # Operates Blockchain Networks
 
