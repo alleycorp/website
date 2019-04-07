@@ -1,12 +1,14 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: Blueground
+status: Invested
 description: >-
-  # IPO October 2017
+  # Turnkey Apartment Rentals
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
-category: exited
-pic: /img/mongo.png
+  Blueground provides turnkey flexible rental apartments now hosting over 1,700
+  listings in nine cities across three continents.
+pic: /img/blueground.jpg
+url: 'https://www.theblueground.com/'
+category: invested
 ---
+
