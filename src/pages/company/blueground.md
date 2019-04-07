@@ -1,12 +1,15 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: Gilt Group
+status: Acquired
 description: >-
-  # IPO October 2017
+  # Acquired by Hudson's Bay in 2016
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
+  Kevin and Dwight Merriman co-founded Gilt Groupe in 2007, revolutionizing the
+  e-commerce and retail industry with its daily flash sales. At the time of
+  sale, Gilt employed 1000+ people and did $600M in revenue. 
+pic: /img/gilt.jpg
+url: 'https://www.gilt.com'
 category: exited
-pic: /img/mongo.png
 ---
+
