@@ -1,12 +1,15 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: DoubleClick
+status: Acquired
 description: >-
-  # IPO October 2017
+  # Acquired by Google in 2007
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
+  Dwight Merriman co-founded DoubleClick where Kevin was president and then CEO.
+  There, they built the company to a multi-billion dollar global adtech leader
+  with 1500+ employees. 
+pic: /img/doubleclick.png
+url: 'https://www.google.com'
 category: exited
-pic: /img/mongo.png
 ---
+
