@@ -14,6 +14,6 @@ description: >-
   and ship wedding gifts and has served over 300,000 couples. 
 pic: /img/zolo.jpg
 url: 'https://www.zola.com'
-category: exited
+category: founded
 ---
 
