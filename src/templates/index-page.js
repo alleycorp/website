@@ -43,7 +43,7 @@ export const IndexPageTemplate = ({
       heading={companiesHeading}
       Subheading={companiesSubheading}
       cta={companiesCta}
-      path={"/companies"}
+      path={"/company"}
       isHeadingLeft={false}
       hasBorder={true}
     >
@@ -65,7 +65,7 @@ export const IndexPageTemplate = ({
       heading={investorsHeading}
       Subheading={investorsSubheading}
       cta={investorsCta}
-      path={"/companies"}
+      path={"/investor"}
       isHeadingLeft={true}
       hasBorder={true}
     >

@@ -80,6 +80,26 @@ collections:
           name: EngagementsSubheading,
           widget: string,
         }
+  - name: "company"
+    label: "Company"
+    folder: "src/pages/company"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "company",
+        }
+      - { label: Name, name: name, widget: string }
+      - { label: Status, name: status, widget: string }
+      - { label: Description, name: description, widget: markdown }
+      - { label: Pic, name: pic, widget: image }
+      - { label: URL, name: url, widget: string },
+      - { label: Category, name: category, widget: select, options: ["exited" "founded", "invested"] }
+
+
 
   - name: "pages"
     label: "Pages"
