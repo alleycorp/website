@@ -1,12 +1,15 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: Great Jones
+status: Invested
 description: >-
-  # IPO October 2017
+  # Property Management Technology
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
-category: exited
-pic: /img/mongo.png
+  Launched in 2017, Great Jones is creating a platform to serve the $2 trillion
+  in rental homes owned by small-scale investors, bringing new technology to
+  property management. Raised $8M Series A by Crosslink Capital.
+pic: /img/great-jones.png
+url: 'https://www.greatjones.co/'
+category: invested
 ---
+
