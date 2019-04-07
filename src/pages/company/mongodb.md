@@ -1,12 +1,19 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: Coedition
+status: Founded
 description: >-
-  # IPO October 2017
+  # Women's Plus-size Ecommerce
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
-category: exited
-pic: /img/mongo.png
+
+  ### Launched March 2018.
+
+
+  Kevin Ryan co-founded CoEdition with three former Gilt executives. CoEdition
+  offers women's sizes 10 to 26 and aims to be a tool for women to buy stylish
+  options without questioning whether it will be available in their size.
+pic: /img/coedition.png
+url: 'http://coedition.com/'
+category: founded
 ---
+
