@@ -119,7 +119,7 @@ collections:
       - { label: Pic, name: pic, widget: image }
       - { label: URL, name: url, widget: string }
   - name: "news"
-    label: "news"
+    label: "News"
     folder: "src/pages/news"
     create: true
     slug: "{{slug}}"
