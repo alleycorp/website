@@ -11,6 +11,7 @@ class CompanyLogo extends React.Component {
 
   render() {
     const { company } = this.props;
+    const { isMouseOver } = this.state;
 
     return (
       <a
@@ -28,18 +29,26 @@ class CompanyLogo extends React.Component {
         }}
         target="_blank"
       >
-        <article className="fl w-25 pa2 grow pointer ">
+        <article
+          className={`fl w-25 pa2 grow pointer ${
+            isMouseOver ? "bg-light-gray dark-gray br4 v-mid tc fw6 f4" : ""
+          }`}
+        >
           <div className="aspect-ratio aspect-ratio--1x1">
-            <img
-              style={{
-                backgroundImage: `url(${
-                  !!company.logo.childImageSharp
-                    ? company.logo.childImageSharp.fluid.src
-                    : company.logo
-                })`
-              }}
-              className="db bg-center cover aspect-ratio--object br4"
-            />
+            {isMouseOver ? (
+              <div className={`pt3`}>{company.name}</div>
+            ) : (
+              <img
+                style={{
+                  backgroundImage: `url(${
+                    !!company.logo.childImageSharp
+                      ? company.logo.childImageSharp.fluid.src
+                      : company.logo
+                  })`
+                }}
+                className="db bg-center cover aspect-ratio--object br4"
+              />
+            )}
           </div>
         </article>
       </a>

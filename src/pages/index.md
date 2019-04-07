@@ -10,41 +10,41 @@ investorsSubheading: >-
 investorsCta: See more co-investors
 vcs:
   - logo: /img/usv.png
-    name: USV
-    url: 'https://www.usv.com/'
+    name: Union Square Ventures
+    url: "https://www.usv.com/"
   - logo: /img/sequoia.jpg
     name: Sequoia
-    url: 'https://www.sequoiacap.com/'
+    url: "https://www.sequoiacap.com/"
   - logo: /img/lightspeed.png
     name: Lightspeed
-    url: 'https://lsvp.com/'
+    url: "https://lsvp.com/"
   - logo: /img/ivp.jpg
     name: IVP
-    url: 'https://www.ivp.com/'
+    url: "https://www.ivp.com/"
   - logo: /img/first-round.png
     name: First Round
-    url: 'https://firstround.com/review/'
+    url: "https://firstround.com/review/"
   - logo: /img/a16z.png
-    name: A16Z
-    url: 'https://a16z.com/'
+    name: Andreessen Horowitz
+    url: "https://a16z.com/"
   - logo: /img/general-catalyst.png
-    name: GC
-    url: 'https://www.generalcatalyst.com/'
+    name: General Catalyst
+    url: "https://www.generalcatalyst.com/"
   - logo: /img/nea.jpg
-    name: NEA
-    url: 'https://www.nea.com/'
+    name: New Enterprise Associates
+    url: "https://www.nea.com/"
   - logo: /img/maven.jpeg
     name: Maven
-    url: 'https://www.mavenventures.com/'
+    url: "https://www.mavenventures.com/"
   - logo: /img/initialized.png
     name: Initialized
-    url: 'https://initialized.com/'
+    url: "https://initialized.com/"
   - logo: /img/bbg.png
     name: Built by Girls
-    url: 'https://www.bbgventures.com/'
+    url: "https://www.bbgventures.com/"
   - logo: /img/redpoint.jpg
     name: Redpoint
-    url: 'https://www.redpoint.com/'
+    url: "https://www.redpoint.com/"
 companiesHeading: Our companies
 companiesSubheading: >-
   Whether its the first check in or the first conversation about a new idea, we
@@ -53,41 +53,40 @@ companiesCta: See more companies
 companies:
   - logo: /img/zolo.jpg
     name: Zola
-    url: 'https://www.zola.com/'
+    url: "https://www.zola.com/"
   - logo: /img/nomad.jpg
     name: Nomad
-    url: 'https://nomadhealth.com/'
+    url: "https://nomadhealth.com/"
   - logo: /img/workframe.png
     name: Workframe
-    url: 'https://workframe.com/'
+    url: "https://workframe.com/"
   - logo: /img/coedition.png
     name: Coedition
-    url: 'https://www.coedition.com'
+    url: "https://www.coedition.com"
 exits:
   - logo: /img/mongo.png
     name: MongoDB
-    url: 'https://www.mongodb.com'
+    url: "https://www.mongodb.com"
   - logo: /img/doubleclick.png
     name: DoubleClick
-    url: 'https://www.google.com'
+    url: "https://www.google.com"
   - logo: /img/business-insider.png
     name: Business Insider
-    url: 'https://www.businessinsider.com'
+    url: "https://www.businessinsider.com"
   - logo: /img/gilt.jpg
     name: Gilt Groupe
-    url: 'https://www.gilt.com'
+    url: "https://www.gilt.com"
 investments:
   - logo: /img/anvyl.jpg
     name: Anvyl
-    url: 'https://anvyl.com/'
+    url: "https://anvyl.com/"
   - logo: /img/great-jones.png
     name: Great Jones
-    url: 'https://www.greatjones.co/'
+    url: "https://www.greatjones.co/"
   - logo: /img/blueground.jpg
     name: Blueground
-    url: 'https://www.theblueground.com/'
+    url: "https://www.theblueground.com/"
   - logo: /img/security-scorecard.jpg
-    name: SecurityScorecard
-    url: 'https://securityscorecard.com/'
+    name: Security Scorecard
+    url: "https://securityscorecard.com/"
 ---
-
