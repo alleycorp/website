@@ -39,11 +39,23 @@ export default class Index extends React.Component {
         <section className="">
           <div className="">
             <div className="center measure-wide pv5">
-              <h1 className={`f-subheadline pv3`}>Get in touch with us</h1>
-              <p className={`f3 pb3 gray lh-copy`}>
-                We actually read these and will get back to you in 24 hours
-                (weekdays). Thats our SLA.
-              </p>
+              <div className="pb5">
+                <h1 className={`f-subheadline pv3`}>Get in touch with us</h1>
+                <p className={`f3 pb3 light-blue lh-copy`}>
+                  We actually read these and will get back to you in 24 hours.
+                </p>
+                <p className={`f5 pb3 gray lh-copy`}>
+                  AlleyCorp is dedicated to building transformative companies in
+                  New York City.
+                </p>
+                <p className={`f5 pb3 gray lh-copy`}>
+                  We also angel and seed invest across sectors, usually as the
+                  one of the first investors. Conversations often start
+                  pre-product and pre-deck. If you are interesting in connecting
+                  with us, please fill out the form below. We look forward to
+                  connecting!
+                </p>
+              </div>
               <form
                 name="contact"
                 method="post"
@@ -51,6 +63,7 @@ export default class Index extends React.Component {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
+                className={`gray`}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="contact" />
@@ -61,12 +74,12 @@ export default class Index extends React.Component {
                   </label>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"name"}>
+                  <label className="label dark-gray" htmlFor={"name"}>
                     Your name
                   </label>
                   <div className="control mv3">
                     <input
-                      className="input pv2 w-100"
+                      className="input-reset br4 ba b--light-gray input pa3 w-100"
                       type={"text"}
                       name={"name"}
                       onChange={this.handleChange}
@@ -76,12 +89,12 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"email"}>
-                    Email
+                  <label className="label dark-gray" htmlFor={"email"}>
+                    Email Address
                   </label>
                   <div className="control mv3">
                     <input
-                      className="input pv2 w-100"
+                      className="input-reset br4 ba b--light-gray input pa3 w-100"
                       type={"email"}
                       name={"email"}
                       onChange={this.handleChange}
@@ -91,12 +104,12 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"message"}>
+                  <label className="label dark-gray" htmlFor={"message"}>
                     Message
                   </label>
                   <div className="control mv3">
                     <textarea
-                      className="textarea pv2 w-100"
+                      className="input-reset br4 ba b--light-gray textarea pa3 w-100"
                       name={"message"}
                       onChange={this.handleChange}
                       id={"message"}
@@ -105,7 +118,23 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <button className="fr button is-link pa2 br4" type="submit">
+                  <label className="label dark-gray" htmlFor={"file"}>
+                    Attach a deck or write up
+                  </label>
+                  <div className="control mv3">
+                    <input
+                      className="file-input input-reset br4 ba b--light-gray textarea pa3 w-100"
+                      type="file"
+                      name="attachment"
+                      onChange={this.handleAttachment}
+                    />
+                  </div>
+                </div>
+                <div className="field">
+                  <button
+                    className="input-reset fl button is-link pa3 br4 pointer grow"
+                    type="submit"
+                  >
                     Send
                   </button>
                 </div>

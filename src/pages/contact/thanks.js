@@ -1,15 +1,15 @@
-import React from 'react'
-import Layout from '../../components/Layout'
+import React from "react";
+import Layout from "../../components/Layout";
 
 export default () => (
   <Layout>
-    <section className="section">
-      <div className="container">
-        <div className="content">
-          <h1>Thank you!</h1>
-          <p>This is a custom thank you page for form submissions</p>
-        </div>
+    <div className="center measure-wide pv5">
+      <div className="pb5">
+        <h1 className={`f-subheadline pv3`}>Thank you for reaching out!</h1>
+        <p className={`f3 pb3 light-blue lh-copy`}>
+          We actually read these and will get back to you in 24 hours.
+        </p>
       </div>
-    </section>
+    </div>
   </Layout>
-)
+);

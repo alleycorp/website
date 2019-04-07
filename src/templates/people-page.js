@@ -71,7 +71,7 @@ export const peoplePageQuery = graphql`
           founder
           pic {
             childImageSharp {
-              fluid(maxWidth: 500, quality: 100) {
+              fluid(maxWidth: 300, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }

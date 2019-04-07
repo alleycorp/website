@@ -30,6 +30,18 @@ const Navbar = class extends React.Component {
           >
             People
           </a>
+          <a
+            className="link pointer hover-light-blue dark-gray f4 f4-l dib mr3 mr4-l"
+            onClick={() => [navigateTo("/company")]}
+          >
+            Companies
+          </a>
+          <a
+            className="link pointer hover-light-blue dark-gray f4 f4-l dib mr3 mr4-l"
+            onClick={() => [navigateTo("/news")]}
+          >
+            News
+          </a>
           {/* <a
             className="link pointer dim dark-gray f6 f4-l dib mr3 mr4-l"
             onClick={() => [navigateTo("/companies")]}

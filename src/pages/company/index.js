@@ -40,7 +40,7 @@ class Companies extends React.Component {
                   onClick={() => [navigateTo(companyNode.node.fields.slug)]}
                 >
                   <div
-                    className={`dt ba br4 b--light-gray pa4 lh-copy grow pointer ${
+                    className={`relative dt ba br4 b--light-gray pa4 lh-copy grow pointer ${
                       isMouseOver ? "shadow-1" : ""
                     }`}
                     onMouseOver={() => {
@@ -54,6 +54,11 @@ class Companies extends React.Component {
                       });
                     }}
                   >
+                    <div
+                      className={`f7 absolute br4 top--1 right--1 bg-light-blue white pv2 ph3`}
+                    >
+                      {company.status}
+                    </div>
                     <div className={`dt-row`}>
                       <img
                         src={
