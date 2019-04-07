@@ -1,6 +1,6 @@
 ---
 templateKey: company
-name: MongoDB
+name: Zola
 status: Founded
 description: >-
   # Reinvented Wedding Planning Technology
