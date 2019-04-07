@@ -98,6 +98,22 @@ collections:
       - { label: Pic, name: pic, widget: image }
       - { label: URL, name: url, widget: string },
       - { label: Category, name: category, widget: select, options: ["exited" "founded", "invested"] }
+  - name: "investor"
+    label: "Investor"
+    folder: "src/pages/investor"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "investor",
+        }
+      - { label: Name, name: name, widget: string }
+      - { label: Pic, name: pic, widget: image }
+      - { label: URL, name: url, widget: string },
+  
 
 
 

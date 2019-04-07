@@ -1,9 +1,9 @@
 import React from "react";
-import { graphql, StaticQuery, navigateTo } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import Layout from "../../components/Layout";
 import _ from "lodash";
 
-class Companies extends React.Component {
+class Investors extends React.Component {
   constructor(props) {
     super(props);
 
@@ -14,22 +14,19 @@ class Companies extends React.Component {
 
   render() {
     const { data } = this.props;
-    const { edges: companies } = data.allMarkdownRemark;
+    const { edges: investors } = data.allMarkdownRemark;
     const { isMouseOver } = this.state;
 
     return (
       <Layout>
         <div className={`w-90 dt center pt5`}>
-          <div className={`f-subheadline pb5`}>Our companies</div>
-          {companies.map(companyNode => {
-            const company = companyNode.node.frontmatter;
+          <div className={`f-subheadline pb5`}>Our Co-investors</div>
+          {investors.map(investorNode => {
+            const investor = investorNode.node.frontmatter;
 
             return (
               <div className={`mv2`}>
-                <a
-                  className={`link`}
-                  onClick={() => [navigateTo(companyNode.node.fields.slug)]}
-                >
+                <a className={`link`} href={investor.url} target="_blank">
                   <div
                     className={`dt ba br4 b--light-gray pa4 lh-copy grow pointer ${
                       isMouseOver ? "shadow-1" : ""
@@ -48,11 +45,11 @@ class Companies extends React.Component {
                     <div className={`dt-row`}>
                       <img
                         src={
-                          !!company.pic.childImageSharp
-                            ? company.pic.childImageSharp.fluid.src
-                            : company.pic
+                          !!investor.pic.childImageSharp
+                            ? investor.pic.childImageSharp.fluid.src
+                            : investor.pic
                         }
-                        alt={company.name}
+                        alt={investor.name}
                         width={250}
                         className={`br4 pa2`}
                       />
@@ -71,22 +68,16 @@ class Companies extends React.Component {
 export default () => (
   <StaticQuery
     query={graphql`
-      query CompaniesQuery {
+      query InvestorsQuery {
         allMarkdownRemark(
-          filter: { frontmatter: { templateKey: { eq: "company" } } }
+          filter: { frontmatter: { templateKey: { eq: "investor" } } }
         ) {
           edges {
             node {
               id
-              fields {
-                slug
-              }
               frontmatter {
                 name
-                description
                 url
-                status
-                category
                 pic {
                   childImageSharp {
                     fluid(maxWidth: 250, quality: 100) {
@@ -100,6 +91,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <Companies data={data} count={count} />}
+    render={(data, count) => <Investors data={data} count={count} />}
   />
 );
