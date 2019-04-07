@@ -1,12 +1,15 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: Denverite
+status: Acquired
 description: >-
-  # IPO October 2017
+  # Acquired by Spirited Media in 2017
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
+  Founded in 2016, Denverite is a new source of content providing for a more
+  modern, accessible take on the news to a fast-growing local audience.
+  Denverite was acquired by Spirited Media.
+pic: /img/denverite.png
+url: 'https://denverite.com/'
 category: exited
-pic: /img/mongo.png
 ---
+
