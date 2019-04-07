@@ -1,12 +1,15 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: SecurityScorecard
+status: Invested
 description: >-
-  # IPO October 2017
-
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
-category: exited
-pic: /img/mongo.png
+  # CyberSecurity Diagnostic
+   
+  Founded in late 2013, SecurityScorecard provides the most accurate rating of
+  security risk for any organization worldwide. Other notable investors include
+  Google Ventures and Sequoia Capital.   
+pic: /img/security-scorecard.jpg
+url: 'https://securityscorecard.com/'
+category: invested
 ---
+
