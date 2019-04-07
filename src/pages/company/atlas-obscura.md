@@ -1,12 +1,15 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: Business Insider
+status: Acquired
 description: >-
-  # IPO October 2017
+  # Acquired by Axel Springer in 2015
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
+  Kevin and Dwight Merriman co-founded Business Insider in 2009 with Henry
+  Blodget. Kevin functioned as Chairman of the Board through its acquisition. BI
+  reaches 150 million unique monthly visitors. 
+pic: /img/business-insider.png
+url: 'https://www.businessinsider.com'
 category: exited
-pic: /img/mongo.png
 ---
+
