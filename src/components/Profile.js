@@ -34,11 +34,7 @@ class Profile extends React.Component {
             });
           }}
         >
-          <div
-            className={`dt ba br4 b--light-gray pa4 lh-copy grow pointer ${
-              isMouseOver ? "shadow-1" : ""
-            }`}
-          >
+          <div className={`dt ba br4 b--light-gray pa4 lh-copy grow pointer`}>
             <div className={`dt-row`}>
               <img
                 src={

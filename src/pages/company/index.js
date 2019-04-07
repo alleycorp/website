@@ -19,7 +19,7 @@ class Companies extends React.Component {
 
     return (
       <Layout>
-        <div className={`w-90 dt center pt5`}>
+        <div className={`w-90 center pt5`}>
           <div className={`pv5`}>
             <div className={`f-subheadline pb3`}>Our companies</div>
             <p className={`measure lh-copy gray`}>
@@ -30,52 +30,52 @@ class Companies extends React.Component {
               very early stage companies as the first seed investors.{" "}
             </p>
           </div>
-          {companies.map(companyNode => {
-            const company = companyNode.node.frontmatter;
+          <div className={`cf`}>
+            {companies.map((companyNode, index) => {
+              const company = companyNode.node.frontmatter;
 
-            return (
-              <div className={`mv2`}>
-                <a
-                  className={`link`}
-                  onClick={() => [navigateTo(companyNode.node.fields.slug)]}
-                >
-                  <div
-                    className={`relative dt ba br4 b--light-gray pa4 lh-copy grow pointer ${
-                      isMouseOver ? "shadow-1" : ""
-                    }`}
-                    onMouseOver={() => {
-                      this.setState({
-                        isMouseOver: true
-                      });
-                    }}
-                    onMouseLeave={() => {
-                      this.setState({
-                        isMouseOver: false
-                      });
-                    }}
+              return (
+                <div className={`fl pa4 mv2`} key={`${company.name}${index}`}>
+                  <a
+                    className={`link`}
+                    onClick={() => [navigateTo(companyNode.node.fields.slug)]}
                   >
                     <div
-                      className={`f7 absolute br4 top--1 right--1 bg-light-blue white pv2 ph3`}
+                      className={`relative dt ba br4 b--light-gray pa4 lh-copy grow pointer`}
                     >
-                      {company.status}
+                      <div
+                        className={`f7 absolute br4 top--1 right--1 bg-light-blue white pv2 ph3 `}
+                      >
+                        {company.status}
+                      </div>
+                      <div className={`dt-row`}>
+                        <img
+                          src={
+                            !!company.pic.childImageSharp
+                              ? company.pic.childImageSharp.fluid.src
+                              : company.pic
+                          }
+                          alt={company.name}
+                          width={250}
+                          className={`br4 pa2`}
+                          onMouseOver={() => {
+                            this.setState({
+                              isMouseOver: true
+                            });
+                          }}
+                          onMouseLeave={() => {
+                            this.setState({
+                              isMouseOver: false
+                            });
+                          }}
+                        />
+                      </div>
                     </div>
-                    <div className={`dt-row`}>
-                      <img
-                        src={
-                          !!company.pic.childImageSharp
-                            ? company.pic.childImageSharp.fluid.src
-                            : company.pic
-                        }
-                        alt={company.name}
-                        width={250}
-                        className={`br4 pa2`}
-                      />
-                    </div>
-                  </div>
-                </a>
-              </div>
-            );
-          })}
+                  </a>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </Layout>
     );
