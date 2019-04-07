@@ -1,12 +1,15 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
+name: Atlas Obscura
+status: Invested
 description: >-
-  # IPO October 2017
+  # Travel Guide Platform
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
-category: exited
-pic: /img/mongo.png
+  Founded in 2009, Atlas Obscura is a travel guide with articles, travel tips,
+  and event details about the world’s hidden wonders. Atlas's additional
+  investors include A+E Networks. 
+pic: /img/atlasobscura.jpg
+url: 'http://www.atlasobscura.com/'
+category: invested
 ---
+
