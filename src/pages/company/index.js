@@ -20,7 +20,16 @@ class Companies extends React.Component {
     return (
       <Layout>
         <div className={`w-90 dt center pt5`}>
-          <div className={`f-subheadline pb5`}>Our companies</div>
+          <div className={`pv5`}>
+            <div className={`f-subheadline pb3`}>Our companies</div>
+            <p className={`measure lh-copy gray`}>
+              AlleyCorp continuously founds and builds companies. On the
+              incubation side, we originate the idea, hire the team, fund the
+              initial 6-12 months, launch the company, and maintain integral
+              leadership throughout the company's lifecycle. We also invest in
+              very early stage companies as the first seed investors.{" "}
+            </p>
+          </div>
           {companies.map(companyNode => {
             const company = companyNode.node.frontmatter;
 

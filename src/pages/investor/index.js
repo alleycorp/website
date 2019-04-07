@@ -20,7 +20,12 @@ class Investors extends React.Component {
     return (
       <Layout>
         <div className={`w-90 dt center pt5`}>
-          <div className={`f-subheadline pb5`}>Our Co-investors</div>
+          <div className={`pv5`}>
+            <div className={`f-subheadline pb3`}>Our Co-investors</div>
+            <p className={`measure lh-copy gray`}>
+              We can help you find the right partners to grow your startup.
+            </p>
+          </div>
           {investors.map(investorNode => {
             const investor = investorNode.node.frontmatter;
 

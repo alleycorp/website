@@ -1,11 +1,11 @@
 import React from "react";
-import FourZeroFour from "../pages/404";
 import Layout from "../components/Layout";
+import FourZeroFour from "../pages/404";
 
-const Investor = () => (
+const News = () => (
   <Layout>
     <FourZeroFour />
   </Layout>
 );
 
-export default Investor;
+export default News;

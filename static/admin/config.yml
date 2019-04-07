@@ -113,6 +113,22 @@ collections:
       - { label: Name, name: name, widget: string }
       - { label: Pic, name: pic, widget: image }
       - { label: URL, name: url, widget: string },
+  - name: "news"
+    label: "news"
+    folder: "src/pages/news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "news",
+        }
+      - { label: Name, name: name, widget: string }
+      - { label: Company, name: company, widget: string }
+      - { label: Pic, name: pic, widget: image }
+      - { label: URL, name: url, widget: string },
   
 
 

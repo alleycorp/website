@@ -7,6 +7,7 @@ import { ChevronRight } from "react-feather";
 export const PeoplePageTemplate = ({ people }) => {
   return (
     <div className={`w-90 dt center pt5`}>
+      <div className={`f-subheadline pv5`}>Our People</div>
       <div className={`dt-row cf`}>
         {people.map(person => {
           return (
