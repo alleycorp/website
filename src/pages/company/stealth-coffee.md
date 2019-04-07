@@ -1,12 +1,16 @@
 ---
 templateKey: company
-name: MongoDB
-url: "https://www.mongodb.com"
-description: >-
-  # IPO October 2017
+name: RippleMatch
+status: Invested
+description: >+
+  # Entry-level Recruitment
 
-  Kevin and Dwight Merriman co-founded MongoDB in 2007. MongoDB is the world’s most popular NoSQL database system employing almost 1000 people in 15 countries.
-status: IPO
-category: exited
-pic: /img/mongo.png
+  Founded in 2016, RippleMatch helps entry-level candidates find their dream
+  jobs. RippleMatch has raised around $5 million in venture funding to date as
+  it automates the time-intensive parts of entry-level recruiting.
+
+pic: /img/ripplematch.jpeg
+url: 'https://ripplematch.com/'
+category: invested
 ---
+
