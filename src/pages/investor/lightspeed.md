@@ -1,6 +1,7 @@
 ---
 templateKey: investor
-pic: /img/usv.png
-name: Union Square Ventures
-url: "https://www.usv.com/"
+name: New Enterprise Associates
+pic: /img/nea.jpg
+url: 'https://www.nea.com/'
 ---
+
