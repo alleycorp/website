@@ -2,7 +2,7 @@
 templateKey: company
 name: Stealth HR
 status: Founded
-description: '# Stealth HR'
+description: ' '
 pic: /img/stealth-hr.png
 url: 'https://www.alleycorp.com'
 category: founded
