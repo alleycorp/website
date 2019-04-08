@@ -54,7 +54,7 @@ class News extends React.Component {
             </p>
             <form
               name="news"
-              className={`pt3 measure`}
+              className={`pv4 measure`}
               method="post"
               action="/contact/thanks/"
               data-netlify="true"
@@ -76,7 +76,7 @@ class News extends React.Component {
                 </label>
                 <div className="control mv3">
                   <input
-                    className="input pv2 w-100"
+                    className="input-reset br4 ba b--light-gray input pa3 w-100"
                     type={"text"}
                     name={"name"}
                     onChange={this.handleChange}
@@ -87,7 +87,7 @@ class News extends React.Component {
               </div>
               <div className="field">
                 <button
-                  className="fr button is-link pa2 br4 grow"
+                  className="fl button is-link pa2 br4 grow"
                   type="submit"
                 >
                   Submit
