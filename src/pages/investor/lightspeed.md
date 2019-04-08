@@ -1,7 +1,6 @@
 ---
 templateKey: investor
-name: New Enterprise Associates
-pic: /img/nea.jpg
-url: 'https://www.nea.com/'
+name: Lightspeed
+pic: /img/lightspeed.png
+url: "https://www.lsvp.com/"
 ---
-

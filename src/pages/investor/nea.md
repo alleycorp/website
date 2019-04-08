@@ -1,7 +1,6 @@
 ---
 templateKey: investor
-name: Initialized
-pic: /img/initialized.png
-url: 'https://www.initialized.com/'
+name: New Enterprise Associates
+pic: /img/nea.jpg
+url: "https://www.nea.com/"
 ---
-
