@@ -7,9 +7,8 @@ description: >-
 
   Founded in 2009, Atlas Obscura is a travel guide with articles, travel tips,
   and event details about the world’s hidden wonders. Atlas's additional
-  investors include A+E Networks. 
-pic: /img/atlasobscura.jpg
-url: 'http://www.atlasobscura.com/'
+  investors include A+E Networks.
+pic: /img/atlas.png
+url: "http://www.atlasobscura.com/"
 category: invested
 ---
-
