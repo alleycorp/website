@@ -103,7 +103,7 @@ class News extends React.Component {
                 <div className={`fl pa4 mv2`}>
                   <a className={`link`} href={news.url} target="_blank">
                     <div
-                      className={`dt ba br4 b--light-gray pa4 lh-copy grow pointer`}
+                      className={`relative dt ba br4 b--light-gray pa4 lh-copy grow pointer`}
                       onMouseOver={() => {
                         this.setState({
                           isMouseOver: true
@@ -115,6 +115,11 @@ class News extends React.Component {
                         });
                       }}
                     >
+                      <div
+                        className={`f7 absolute br4 top--1 right--1 bg-light-blue white pv2 ph3`}
+                      >
+                        {news.outlet}
+                      </div>
                       <div className={`dt-row`}>
                         <img
                           src={
@@ -127,7 +132,9 @@ class News extends React.Component {
                           className={`br4 pa2`}
                         />
                       </div>
-                      <div className={`dt-row mw4`}>{news.name}</div>
+                      <div className={`dt-row`}>
+                        <div className={`center tc mw5`}>{news.name}</div>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -154,6 +161,7 @@ export default () => (
                 name
                 company
                 url
+                outlet
                 pic {
                   childImageSharp {
                     fluid(maxWidth: 250, quality: 100) {
