@@ -56,7 +56,7 @@ class News extends React.Component {
               name="news"
               className={`pv4 measure`}
               method="post"
-              action="/contact/thanks/"
+              action="/contact/thanks-news/"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={this.handleSubmit}
@@ -133,7 +133,7 @@ class News extends React.Component {
                         />
                       </div>
                       <div className={`dt-row`}>
-                        <div className={`link gray center tc mw5`}>
+                        <div className={`link dark-gray center tc mw5`}>
                           {news.name}
                         </div>
                       </div>

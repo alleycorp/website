@@ -35,7 +35,10 @@ class Companies extends React.Component {
               const company = companyNode.node.frontmatter;
 
               return (
-                <div className={`fl pa4 mv2`} key={`${company.name}${index}`}>
+                <div
+                  className={`fl pa4 mv2 w-25-l w-100`}
+                  key={`${company.name}${index}`}
+                >
                   <a
                     className={`link`}
                     onClick={() => [navigateTo(companyNode.node.fields.slug)]}

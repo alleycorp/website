@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import CompanyLogo from "../components/CompanyLogo";
 import Section from "../components/Section";
+import { ChevronDown } from "react-feather";
 
 export const IndexPageTemplate = ({
   heading,
@@ -39,6 +40,9 @@ export const IndexPageTemplate = ({
           className={`br4 pa2 center`}
           width={350}
         />
+      </div>
+      <div className={``}>
+        <ChevronDown />
       </div>
     </Section>
 

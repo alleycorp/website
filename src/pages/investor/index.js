@@ -31,7 +31,7 @@ class Investors extends React.Component {
               const investor = investorNode.node.frontmatter;
 
               return (
-                <div className={`fl pa4 mv2`}>
+                <div className={`fl pa4 mv2 w-25-l w-100`}>
                   <a className={`link`} href={investor.url} target="_blank">
                     <div
                       className={`dt ba br4 b--light-gray pa4 lh-copy grow pointer`}
