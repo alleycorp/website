@@ -8,7 +8,7 @@ description: >-
   Founded in 2017, Anvyl is using analytics to reinvent supply chains to make
   products better, smarter and easier. Anvyl's additional investors include
   First Round Capital. 
-pic: /img/mongo.png
+pic: /img/anvyl.jpg
 url: 'https://anvyl.com/'
 category: invested
 ---
