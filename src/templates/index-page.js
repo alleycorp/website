@@ -53,7 +53,7 @@ export const IndexPageTemplate = ({
       cta={companiesCta}
       path={"/company"}
       isHeadingLeft={false}
-      hasBorder={true}
+      hasBorder={false}
     >
       <section class="cf w-100 pa2">
         {exits.map(exit => (
@@ -75,7 +75,7 @@ export const IndexPageTemplate = ({
       cta={investorsCta}
       path={"/investor"}
       isHeadingLeft={true}
-      hasBorder={true}
+      hasBorder={false}
     >
       <section class="cf w-100 pa2">
         {vcs.map(vc => (

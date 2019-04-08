@@ -46,7 +46,7 @@ class Section extends React.Component {
     return (
       <div className={`dt-row w-100`}>
         <div
-          className={`dt h-100 w-100 mv5 ${
+          className={`dt h-100 w-100 mv3 ${
             hasBorder ? "ba br4 b--light-gray" : ""
           }`}
         >
