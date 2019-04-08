@@ -131,6 +131,7 @@ collections:
           default: "news",
         }
       - { label: Name, name: name, widget: string }
+      - { label: Outlet, name: outlet, widget: string }
       - { label: Company, name: company, widget: string }
       - { label: Pic, name: pic, widget: image }
       - { label: URL, name: url, widget: string }

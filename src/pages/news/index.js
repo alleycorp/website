@@ -127,6 +127,7 @@ class News extends React.Component {
                           className={`br4 pa2`}
                         />
                       </div>
+                      <div className={`dt-row mw4`}>{news.name}</div>
                     </div>
                   </a>
                 </div>
