@@ -1,6 +1,7 @@
 ---
 templateKey: investor
-pic: /img/usv.png
-name: Union Square Ventures
-url: "https://www.usv.com/"
+name: Andreessen Horowitz
+pic: /img/a16z.png
+url: 'https://www.a16z.com/'
 ---
+
