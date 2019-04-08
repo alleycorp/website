@@ -1,6 +1,7 @@
 ---
 templateKey: investor
-pic: /img/usv.png
-name: Union Square Ventures
-url: "https://www.usv.com/"
+name: Maven
+pic: /img/maven.jpeg
+url: 'https://www.mavenventures.com/'
 ---
+
