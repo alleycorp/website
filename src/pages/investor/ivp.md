@@ -1,6 +1,7 @@
 ---
 templateKey: investor
-pic: /img/usv.png
-name: Union Square Ventures
-url: "https://www.usv.com/"
+name: General Catalyst
+pic: /img/general-catalyst.png
+url: 'https://www.generalcatalyst.com/'
 ---
+
