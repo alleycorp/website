@@ -30,12 +30,16 @@ export const IndexPageTemplate = ({
       isHeadingLeft={true}
       hasBorder={false}
     >
-      <img
-        src={!!image.childImageSharp ? image.childImageSharp.fluid.src : image}
-        alt={"New York City"}
-        className={`br4 pa2 center`}
-        width={500}
-      />
+      <div className={`center w-100`}>
+        <img
+          src={
+            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          }
+          alt={"New York City"}
+          className={`br4 pa2 center`}
+          width={350}
+        />
+      </div>
     </Section>
 
     {/* Companies */}
