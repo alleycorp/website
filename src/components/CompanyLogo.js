@@ -36,7 +36,7 @@ class CompanyLogo extends React.Component {
             }`}
           >
             {isMouseOver ? (
-              <div className={`pt3 tc b light-blue`}>{company.name}</div>
+              <div className={`pt3 tc b light-blue f6`}>{company.name}</div>
             ) : (
               <img
                 style={{
