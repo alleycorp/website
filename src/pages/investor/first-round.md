@@ -1,6 +1,7 @@
 ---
 templateKey: investor
-pic: /img/usv.png
-name: Union Square Ventures
-url: "https://www.usv.com/"
+name: Lightspeed
+pic: /img/lightspeed.png
+url: 'https://www.lsvp.com/'
 ---
+
