@@ -1,6 +1,7 @@
 ---
 templateKey: investor
-pic: /img/usv.png
-name: Union Square Ventures
-url: "https://www.usv.com/"
+name: Initialized
+pic: /img/initialized.png
+url: 'https://www.initialized.com/'
 ---
+
