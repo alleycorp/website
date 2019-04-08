@@ -133,7 +133,9 @@ class News extends React.Component {
                         />
                       </div>
                       <div className={`dt-row`}>
-                        <div className={`center tc mw5`}>{news.name}</div>
+                        <div className={`link gray center tc mw5`}>
+                          {news.name}
+                        </div>
                       </div>
                     </div>
                   </a>
