@@ -35,20 +35,20 @@ class CompanyLogo extends React.Component {
               isMouseOver ? "shadow-1" : ""
             }`}
           >
-            {/* {isMouseOver ? (
-              <div className={`pt3`}>{company.name}</div>
-            ) : ( */}
-            <img
-              style={{
-                backgroundImage: `url(${
-                  !!company.logo.childImageSharp
-                    ? company.logo.childImageSharp.fluid.src
-                    : company.logo
-                })`
-              }}
-              className="db bg-center cover aspect-ratio--object br4"
-            />
-            {/* )} */}
+            {isMouseOver ? (
+              <div className={`pt3 tc b light-blue`}>{company.name}</div>
+            ) : (
+              <img
+                style={{
+                  backgroundImage: `url(${
+                    !!company.logo.childImageSharp
+                      ? company.logo.childImageSharp.fluid.src
+                      : company.logo
+                  })`
+                }}
+                className="db bg-center cover aspect-ratio--object br4"
+              />
+            )}
           </div>
         </article>
       </a>
