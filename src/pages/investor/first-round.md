@@ -1,7 +1,7 @@
 ---
 templateKey: investor
-name: Lightspeed
-pic: /img/lightspeed.png
-url: 'https://www.lsvp.com/'
+name: IVP
+pic: /img/ivp.jpg
+url: 'https://www.ivp.com/'
 ---
 
