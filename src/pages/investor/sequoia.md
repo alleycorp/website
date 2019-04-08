@@ -1,6 +1,7 @@
 ---
 templateKey: investor
-pic: /img/usv.png
-name: Union Square Ventures
-url: "https://www.usv.com/"
+name: Redpoint
+pic: /img/redpoint.jpg
+url: 'https://www.redpoint.com/'
 ---
+
