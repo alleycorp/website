@@ -1,6 +1,7 @@
 ---
 templateKey: investor
-pic: /img/usv.png
-name: Union Square Ventures
-url: "https://www.usv.com/"
+name: Built by Girls
+pic: /img/bbg.png
+url: 'https://www.bbgventures.com/'
 ---
+
